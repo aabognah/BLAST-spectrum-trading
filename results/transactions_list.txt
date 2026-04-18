@@ -1,0 +1,116 @@
+--- Tick 3
+  Buyer: agent-3, Seller: agent-0, Token: token_0 (5 MHz)
+    Reserve Price: $37.50, Sale Price: $75.00, Auction Type: second_price
+    Buyer Valuation: $100.00, Buyer Profit: $25.00
+    Seller Valuation: $25.00, Seller Profit: $50.00
+--- Tick 6
+  Buyer: agent-3, Seller: agent-0, Token: token_1 (10 MHz)
+    Reserve Price: $75.00, Sale Price: $150.00, Auction Type: second_price
+    Buyer Valuation: $200.00, Buyer Profit: $50.00
+    Seller Valuation: $50.00, Seller Profit: $100.00
+--- Tick 7
+  Buyer: agent-3, Seller: agent-0, Token: token_2 (5 MHz)
+    Reserve Price: $75.00, Sale Price: $75.00, Auction Type: second_price
+    Buyer Valuation: $100.00, Buyer Profit: $25.00
+    Seller Valuation: $25.00, Seller Profit: $50.00
+--- Tick 9
+  Buyer: agent-3, Seller: agent-0, Token: token_3 (10 MHz)
+    Reserve Price: $150.00, Sale Price: $150.00, Auction Type: second_price
+    Buyer Valuation: $200.00, Buyer Profit: $50.00
+    Seller Valuation: $50.00, Seller Profit: $100.00
+--- Tick 10
+  Buyer: agent-3, Seller: agent-0, Token: token_4 (10 MHz)
+    Reserve Price: $150.00, Sale Price: $150.00, Auction Type: second_price
+    Buyer Valuation: $200.00, Buyer Profit: $50.00
+    Seller Valuation: $50.00, Seller Profit: $100.00
+--- Tick 11
+  Buyer: agent-3, Seller: agent-0, Token: token_5 (5 MHz)
+    Reserve Price: $75.00, Sale Price: $75.00, Auction Type: second_price
+    Buyer Valuation: $100.00, Buyer Profit: $25.00
+    Seller Valuation: $25.00, Seller Profit: $50.00
+--- Tick 12
+  Buyer: agent-3, Seller: agent-0, Token: token_6 (15 MHz)
+    Reserve Price: $225.00, Sale Price: $225.00, Auction Type: second_price
+    Buyer Valuation: $300.00, Buyer Profit: $75.00
+    Seller Valuation: $75.00, Seller Profit: $150.00
+--- Tick 13
+  Buyer: agent-3, Seller: agent-0, Token: token_7 (15 MHz)
+    Reserve Price: $112.50, Sale Price: $225.00, Auction Type: second_price
+    Buyer Valuation: $300.00, Buyer Profit: $75.00
+    Seller Valuation: $75.00, Seller Profit: $150.00
+--- Tick 15
+  Buyer: agent-3, Seller: agent-0, Token: token_9 (15 MHz)
+    Reserve Price: $225.00, Sale Price: $225.00, Auction Type: second_price
+    Buyer Valuation: $300.00, Buyer Profit: $75.00
+    Seller Valuation: $75.00, Seller Profit: $150.00
+--- Tick 16
+  Buyer: agent-3, Seller: agent-0, Token: token_10 (15 MHz)
+    Reserve Price: $225.00, Sale Price: $225.00, Auction Type: second_price
+    Buyer Valuation: $300.00, Buyer Profit: $75.00
+    Seller Valuation: $75.00, Seller Profit: $150.00
+--- Tick 17
+  Buyer: agent-3, Seller: agent-0, Token: token_8 (5 MHz)
+    Reserve Price: $75.00, Sale Price: $75.00, Auction Type: second_price
+    Buyer Valuation: $100.00, Buyer Profit: $25.00
+    Seller Valuation: $25.00, Seller Profit: $50.00
+--- Tick 19
+  Buyer: agent-3, Seller: agent-0, Token: token_11 (10 MHz)
+    Reserve Price: $150.00, Sale Price: $150.00, Auction Type: second_price
+    Buyer Valuation: $200.00, Buyer Profit: $50.00
+    Seller Valuation: $50.00, Seller Profit: $100.00
+--- Tick 22
+  [FAILED] Seller: agent-0, Token: token_12, Reserve: $150.00, Auction Type: second_price
+--- Tick 23
+  [FAILED] Seller: agent-0, Token: token_13, Reserve: $75.00, Auction Type: second_price
+  [FAILED] Seller: agent-3, Token: token_0, Reserve: $150.00, Auction Type: second_price
+--- Tick 24
+  [FAILED] Seller: agent-0, Token: token_14, Reserve: $150.00, Auction Type: second_price
+--- Tick 25
+  [FAILED] Seller: agent-0, Token: token_15, Reserve: $225.00, Auction Type: second_price
+  [FAILED] Seller: agent-3, Token: token_1, Reserve: $200.00, Auction Type: second_price
+--- Tick 26
+  [FAILED] Seller: agent-0, Token: token_16, Reserve: $225.00, Auction Type: second_price
+--- Tick 27
+  [FAILED] Seller: agent-3, Token: token_2, Reserve: $150.00, Auction Type: second_price
+--- Tick 28
+  [FAILED] Seller: agent-0, Token: token_12, Reserve: $150.00, Auction Type: second_price
+  [FAILED] Seller: agent-3, Token: token_3, Reserve: $300.00, Auction Type: second_price
+--- Tick 30
+  [FAILED] Seller: agent-0, Token: token_13, Reserve: $37.50, Auction Type: second_price
+--- Tick 31
+  [FAILED] Seller: agent-3, Token: token_0, Reserve: $100.00, Auction Type: second_price
+--- Tick 32
+  [FAILED] Seller: agent-0, Token: token_14, Reserve: $63.75, Auction Type: second_price
+--- Tick 33
+  [FAILED] Seller: agent-0, Token: token_15, Reserve: $300.00, Auction Type: second_price
+--- Tick 35
+  [FAILED] Seller: agent-0, Token: token_12, Reserve: $75.00, Auction Type: second_price
+--- Tick 36
+  [FAILED] Seller: agent-0, Token: token_13, Reserve: $75.00, Auction Type: second_price
+--- Tick 37
+  [FAILED] Seller: agent-3, Token: token_0, Reserve: $100.00, Auction Type: second_price
+--- Tick 39
+  [FAILED] Seller: agent-0, Token: token_14, Reserve: $75.00, Auction Type: second_price
+--- Tick 40
+  [FAILED] Seller: agent-3, Token: token_1, Reserve: $170.00, Auction Type: second_price
+  [FAILED] Seller: agent-0, Token: token_15, Reserve: $75.00, Auction Type: second_price
+--- Tick 42
+  [FAILED] Seller: agent-0, Token: token_16, Reserve: $75.00, Auction Type: second_price
+  [FAILED] Seller: agent-3, Token: token_2, Reserve: $37.50, Auction Type: second_price
+--- Tick 44
+  [FAILED] Seller: agent-0, Token: token_13, Reserve: $1.00, Auction Type: second_price
+  [FAILED] Seller: agent-3, Token: token_6, Reserve: $450.00, Auction Type: second_price
+--- Tick 46
+  [FAILED] Seller: agent-0, Token: token_12, Reserve: $50.00, Auction Type: second_price
+--- Tick 47
+  [FAILED] Seller: agent-3, Token: token_0, Reserve: $90.00, Auction Type: second_price
+  [FAILED] Seller: agent-0, Token: token_15, Reserve: $63.75, Auction Type: second_price
+--- Tick 49
+  [FAILED] Seller: agent-0, Token: token_14, Reserve: $50.00, Auction Type: second_price
+--- Tick 50
+  [FAILED] Seller: agent-3, Token: token_1, Reserve: $1.00, Auction Type: second_price
+
+Successful Transactions: 12
+Failed Auctions: 29
+Total Buyer Profit: $600.00
+Total Seller Profit: $1200.00

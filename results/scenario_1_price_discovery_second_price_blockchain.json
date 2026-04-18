@@ -1,0 +1,4269 @@
+{
+  "chain": [
+    {
+      "index": 0,
+      "timestamp": 1775940247.191543,
+      "transactions": [],
+      "previous_hash": "0",
+      "active_auctions_snapshot": {},
+      "hash": "10330a195e4d03cf0989f49e520083cf7361bda854643639e6acd90444b8ce09"
+    },
+    {
+      "index": 1,
+      "timestamp": 1775940272.929949,
+      "transactions": [
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_0",
+            "price": 37.5
+          },
+          "timestamp": 1775940271.390827,
+          "tx_type": "start_auction"
+        }
+      ],
+      "previous_hash": "10330a195e4d03cf0989f49e520083cf7361bda854643639e6acd90444b8ce09",
+      "active_auctions_snapshot": {
+        "token_0": {
+          "seller_id": "agent-0",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 1,
+          "end_block": 3,
+          "max_end_block": 6
+        }
+      },
+      "hash": "cf1402003f7f61a5e7fd4c8b0a5762cd6517e594a8d01b6f21b718f8231d17b4"
+    },
+    {
+      "index": 2,
+      "timestamp": 1775940308.49585,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_0",
+            "bid_amount": 100
+          },
+          "timestamp": 1775940293.0291169,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_0",
+            "bid_amount": 75
+          },
+          "timestamp": 1775940295.797685,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_0",
+            "bid_amount": 50
+          },
+          "timestamp": 1775940295.924025,
+          "tx_type": "place_bid",
+          "accepted": true
+        }
+      ],
+      "previous_hash": "cf1402003f7f61a5e7fd4c8b0a5762cd6517e594a8d01b6f21b718f8231d17b4",
+      "active_auctions_snapshot": {
+        "token_0": {
+          "seller_id": "agent-0",
+          "reserve_price": 37.5,
+          "bids": [
+            {
+              "bidder_id": "agent-3",
+              "amount": 100
+            },
+            {
+              "bidder_id": "agent-2",
+              "amount": 75
+            },
+            {
+              "bidder_id": "agent-1",
+              "amount": 50
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 1,
+          "end_block": 3,
+          "max_end_block": 6
+        }
+      },
+      "hash": "8eee1aceaab78c0022030c241d0f33de63cd71d0a987f9009608298673e83543"
+    },
+    {
+      "index": 3,
+      "timestamp": 1775940337.779479,
+      "transactions": [
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_0",
+          "seller_id": "agent-0",
+          "winner_id": "agent-3",
+          "final_price": 75,
+          "reserve_price": 37.5,
+          "tick_resolved": 3,
+          "timestamp": 1775940337.7794728,
+          "success": true,
+          "bids": [
+            {
+              "bidder_id": "agent-3",
+              "amount": 100
+            },
+            {
+              "bidder_id": "agent-2",
+              "amount": 75
+            },
+            {
+              "bidder_id": "agent-1",
+              "amount": 50
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 1
+        }
+      ],
+      "previous_hash": "8eee1aceaab78c0022030c241d0f33de63cd71d0a987f9009608298673e83543",
+      "active_auctions_snapshot": {},
+      "hash": "027ed1bdbab06ec5bb050381e754eaeb08777d32ebb95449a69061346cce6451"
+    },
+    {
+      "index": 4,
+      "timestamp": 1775940370.9893801,
+      "transactions": [
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_1",
+            "price": 75
+          },
+          "timestamp": 1775940369.4062111,
+          "tx_type": "start_auction"
+        }
+      ],
+      "previous_hash": "027ed1bdbab06ec5bb050381e754eaeb08777d32ebb95449a69061346cce6451",
+      "active_auctions_snapshot": {
+        "token_1": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 4,
+          "end_block": 6,
+          "max_end_block": 9
+        }
+      },
+      "hash": "1d4eb9849135b2122ce8d48dbd5dbfd02d0eadc7b7aaf2c4a5ab670ce109c4a1"
+    },
+    {
+      "index": 5,
+      "timestamp": 1775940410.209347,
+      "transactions": [
+        {
+          "agent_id": "agent-2",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_1",
+            "bid_amount": 150
+          },
+          "timestamp": 1775940388.299964,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_1",
+            "bid_amount": 100
+          },
+          "timestamp": 1775940390.894882,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_1",
+            "bid_amount": 200
+          },
+          "timestamp": 1775940395.049537,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_2",
+            "price": 75
+          },
+          "timestamp": 1775940408.605645,
+          "tx_type": "start_auction"
+        }
+      ],
+      "previous_hash": "1d4eb9849135b2122ce8d48dbd5dbfd02d0eadc7b7aaf2c4a5ab670ce109c4a1",
+      "active_auctions_snapshot": {
+        "token_1": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 150
+            },
+            {
+              "bidder_id": "agent-1",
+              "amount": 100
+            },
+            {
+              "bidder_id": "agent-3",
+              "amount": 200
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 4,
+          "end_block": 6,
+          "max_end_block": 9
+        },
+        "token_2": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 5,
+          "end_block": 7,
+          "max_end_block": 10
+        }
+      },
+      "hash": "67f3aba2a4ec777d9d486f644b8be9f2a7185b2d537e4de991afd8616636440a"
+    },
+    {
+      "index": 6,
+      "timestamp": 1775940543.2177439,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_2",
+            "bid_amount": 100
+          },
+          "timestamp": 1775940438.476495,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_2",
+            "bid_amount": 75
+          },
+          "timestamp": 1775940541.597814,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_1",
+          "seller_id": "agent-0",
+          "winner_id": "agent-3",
+          "final_price": 150,
+          "reserve_price": 75,
+          "tick_resolved": 6,
+          "timestamp": 1775940543.217738,
+          "success": true,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 150
+            },
+            {
+              "bidder_id": "agent-1",
+              "amount": 100
+            },
+            {
+              "bidder_id": "agent-3",
+              "amount": 200
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 4
+        }
+      ],
+      "previous_hash": "67f3aba2a4ec777d9d486f644b8be9f2a7185b2d537e4de991afd8616636440a",
+      "active_auctions_snapshot": {
+        "token_2": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [
+            {
+              "bidder_id": "agent-3",
+              "amount": 100
+            },
+            {
+              "bidder_id": "agent-2",
+              "amount": 75
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 5,
+          "end_block": 7,
+          "max_end_block": 10
+        }
+      },
+      "hash": "032a33e530ac41d3d802b9ad099ed862e3f227b062c53e009986631f22b1d071"
+    },
+    {
+      "index": 7,
+      "timestamp": 1775940579.098113,
+      "transactions": [
+        {
+          "agent_id": "agent-1",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_2",
+            "bid_amount": 50
+          },
+          "timestamp": 1775940574.4717262,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_3",
+            "price": 150
+          },
+          "timestamp": 1775940577.460264,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_2",
+          "seller_id": "agent-0",
+          "winner_id": "agent-3",
+          "final_price": 75,
+          "reserve_price": 75,
+          "tick_resolved": 7,
+          "timestamp": 1775940579.0981,
+          "success": true,
+          "bids": [
+            {
+              "bidder_id": "agent-3",
+              "amount": 100
+            },
+            {
+              "bidder_id": "agent-2",
+              "amount": 75
+            },
+            {
+              "bidder_id": "agent-1",
+              "amount": 50
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 5
+        }
+      ],
+      "previous_hash": "032a33e530ac41d3d802b9ad099ed862e3f227b062c53e009986631f22b1d071",
+      "active_auctions_snapshot": {
+        "token_3": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 7,
+          "end_block": 9,
+          "max_end_block": 12
+        }
+      },
+      "hash": "d92d4888b3fba108d699475d46103af399bf1b39239556be8250580e1b3b1b39"
+    },
+    {
+      "index": 8,
+      "timestamp": 1775940608.584207,
+      "transactions": [
+        {
+          "agent_id": "agent-2",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_3",
+            "bid_amount": 150
+          },
+          "timestamp": 1775940599.053215,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_3",
+            "bid_amount": 100
+          },
+          "timestamp": 1775940603.725329,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_3",
+            "bid_amount": 200
+          },
+          "timestamp": 1775940604.2564301,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_4",
+            "price": 150
+          },
+          "timestamp": 1775940607.002049,
+          "tx_type": "start_auction"
+        }
+      ],
+      "previous_hash": "d92d4888b3fba108d699475d46103af399bf1b39239556be8250580e1b3b1b39",
+      "active_auctions_snapshot": {
+        "token_3": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 150
+            },
+            {
+              "bidder_id": "agent-1",
+              "amount": 100
+            },
+            {
+              "bidder_id": "agent-3",
+              "amount": 200
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 7,
+          "end_block": 9,
+          "max_end_block": 12
+        },
+        "token_4": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 8,
+          "end_block": 10,
+          "max_end_block": 13
+        }
+      },
+      "hash": "da67f9940451caec6beaa5ec220d1852a537e9b0b928dcaac4e7920b1d3004ed"
+    },
+    {
+      "index": 9,
+      "timestamp": 1775940651.314027,
+      "transactions": [
+        {
+          "agent_id": "agent-2",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_4",
+            "bid_amount": 150
+          },
+          "timestamp": 1775940630.977988,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_4",
+            "bid_amount": 200
+          },
+          "timestamp": 1775940636.491088,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_5",
+            "price": 75
+          },
+          "timestamp": 1775940649.7210822,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_3",
+          "seller_id": "agent-0",
+          "winner_id": "agent-3",
+          "final_price": 150,
+          "reserve_price": 150,
+          "tick_resolved": 9,
+          "timestamp": 1775940651.3140202,
+          "success": true,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 150
+            },
+            {
+              "bidder_id": "agent-1",
+              "amount": 100
+            },
+            {
+              "bidder_id": "agent-3",
+              "amount": 200
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 7
+        }
+      ],
+      "previous_hash": "da67f9940451caec6beaa5ec220d1852a537e9b0b928dcaac4e7920b1d3004ed",
+      "active_auctions_snapshot": {
+        "token_4": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 150
+            },
+            {
+              "bidder_id": "agent-3",
+              "amount": 200
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 8,
+          "end_block": 10,
+          "max_end_block": 13
+        },
+        "token_5": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 9,
+          "end_block": 11,
+          "max_end_block": 14
+        }
+      },
+      "hash": "48089ac8b006fa5e9bc96fdb6a179845eff499dbe7dc704dcf039dc060e2058c"
+    },
+    {
+      "index": 10,
+      "timestamp": 1775940691.458091,
+      "transactions": [
+        {
+          "agent_id": "agent-2",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_5",
+            "bid_amount": 75
+          },
+          "timestamp": 1775940675.0681422,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_5",
+            "bid_amount": 100
+          },
+          "timestamp": 1775940676.908993,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_6",
+            "price": 225
+          },
+          "timestamp": 1775940689.725648,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_4",
+          "seller_id": "agent-0",
+          "winner_id": "agent-3",
+          "final_price": 150,
+          "reserve_price": 150,
+          "tick_resolved": 10,
+          "timestamp": 1775940691.458085,
+          "success": true,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 150
+            },
+            {
+              "bidder_id": "agent-3",
+              "amount": 200
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 8
+        }
+      ],
+      "previous_hash": "48089ac8b006fa5e9bc96fdb6a179845eff499dbe7dc704dcf039dc060e2058c",
+      "active_auctions_snapshot": {
+        "token_5": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 75
+            },
+            {
+              "bidder_id": "agent-3",
+              "amount": 100
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 9,
+          "end_block": 11,
+          "max_end_block": 14
+        },
+        "token_6": {
+          "seller_id": "agent-0",
+          "reserve_price": 225,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 10,
+          "end_block": 12,
+          "max_end_block": 15
+        }
+      },
+      "hash": "33823d1403cbc384e1e5004c9428a29c8c59b620cd1c12cfc92902d861223f91"
+    },
+    {
+      "index": 11,
+      "timestamp": 1775940728.8434849,
+      "transactions": [
+        {
+          "agent_id": "agent-2",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_6",
+            "bid_amount": 225
+          },
+          "timestamp": 1775940712.49204,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_7",
+            "price": 112.5
+          },
+          "timestamp": 1775940721.040567,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_6",
+            "bid_amount": 300
+          },
+          "timestamp": 1775940727.3722408,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_5",
+          "seller_id": "agent-0",
+          "winner_id": "agent-3",
+          "final_price": 75,
+          "reserve_price": 75,
+          "tick_resolved": 11,
+          "timestamp": 1775940728.8434792,
+          "success": true,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 75
+            },
+            {
+              "bidder_id": "agent-3",
+              "amount": 100
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 9
+        }
+      ],
+      "previous_hash": "33823d1403cbc384e1e5004c9428a29c8c59b620cd1c12cfc92902d861223f91",
+      "active_auctions_snapshot": {
+        "token_6": {
+          "seller_id": "agent-0",
+          "reserve_price": 225,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 225
+            },
+            {
+              "bidder_id": "agent-3",
+              "amount": 300
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 10,
+          "end_block": 12,
+          "max_end_block": 15
+        },
+        "token_7": {
+          "seller_id": "agent-0",
+          "reserve_price": 112.5,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 11,
+          "end_block": 13,
+          "max_end_block": 16
+        }
+      },
+      "hash": "02f98da580dccdb53e1795ef71e893583b9c4640c22b474c695112654a22c31e"
+    },
+    {
+      "index": 12,
+      "timestamp": 1775940762.8210151,
+      "transactions": [
+        {
+          "agent_id": "agent-1",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_7",
+            "bid_amount": 150
+          },
+          "timestamp": 1775940750.325954,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_7",
+            "bid_amount": 225
+          },
+          "timestamp": 1775940755.74895,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_7",
+            "bid_amount": 300
+          },
+          "timestamp": 1775940756.880501,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_8",
+            "price": 75
+          },
+          "timestamp": 1775940760.9489548,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_6",
+          "seller_id": "agent-0",
+          "winner_id": "agent-3",
+          "final_price": 225,
+          "reserve_price": 225,
+          "tick_resolved": 12,
+          "timestamp": 1775940762.821012,
+          "success": true,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 225
+            },
+            {
+              "bidder_id": "agent-3",
+              "amount": 300
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 10
+        }
+      ],
+      "previous_hash": "02f98da580dccdb53e1795ef71e893583b9c4640c22b474c695112654a22c31e",
+      "active_auctions_snapshot": {
+        "token_7": {
+          "seller_id": "agent-0",
+          "reserve_price": 112.5,
+          "bids": [
+            {
+              "bidder_id": "agent-1",
+              "amount": 150
+            },
+            {
+              "bidder_id": "agent-2",
+              "amount": 225
+            },
+            {
+              "bidder_id": "agent-3",
+              "amount": 300
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 11,
+          "end_block": 13,
+          "max_end_block": 16
+        },
+        "token_8": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 12,
+          "end_block": 14,
+          "max_end_block": 17
+        }
+      },
+      "hash": "8fef11d59468e494c3ae51c6925b3f31eba7f1a771e25dbff4d2ecde2e1c3be5"
+    },
+    {
+      "index": 13,
+      "timestamp": 1775940799.819974,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_8",
+            "bid_amount": 100
+          },
+          "timestamp": 1775940788.874177,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_9",
+            "price": 225
+          },
+          "timestamp": 1775940798.173813,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_7",
+          "seller_id": "agent-0",
+          "winner_id": "agent-3",
+          "final_price": 225,
+          "reserve_price": 112.5,
+          "tick_resolved": 13,
+          "timestamp": 1775940799.819967,
+          "success": true,
+          "bids": [
+            {
+              "bidder_id": "agent-1",
+              "amount": 150
+            },
+            {
+              "bidder_id": "agent-2",
+              "amount": 225
+            },
+            {
+              "bidder_id": "agent-3",
+              "amount": 300
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 11
+        }
+      ],
+      "previous_hash": "8fef11d59468e494c3ae51c6925b3f31eba7f1a771e25dbff4d2ecde2e1c3be5",
+      "active_auctions_snapshot": {
+        "token_8": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [
+            {
+              "bidder_id": "agent-3",
+              "amount": 100
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 12,
+          "end_block": 14,
+          "max_end_block": 17
+        },
+        "token_9": {
+          "seller_id": "agent-0",
+          "reserve_price": 225,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 13,
+          "end_block": 15,
+          "max_end_block": 18
+        }
+      },
+      "hash": "31882f4ff9416fd2bcc428838bf9aac8651c08b8ca5a8c827184cc1b7636b964"
+    },
+    {
+      "index": 14,
+      "timestamp": 1775940833.6628768,
+      "transactions": [
+        {
+          "agent_id": "agent-2",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_9",
+            "bid_amount": 225
+          },
+          "timestamp": 1775940822.5211608,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_9",
+            "bid_amount": 300
+          },
+          "timestamp": 1775940826.550368,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_10",
+            "price": 225
+          },
+          "timestamp": 1775940832.019511,
+          "tx_type": "start_auction"
+        }
+      ],
+      "previous_hash": "31882f4ff9416fd2bcc428838bf9aac8651c08b8ca5a8c827184cc1b7636b964",
+      "active_auctions_snapshot": {
+        "token_8": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [
+            {
+              "bidder_id": "agent-3",
+              "amount": 100
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 12,
+          "end_block": 15,
+          "max_end_block": 17
+        },
+        "token_9": {
+          "seller_id": "agent-0",
+          "reserve_price": 225,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 225
+            },
+            {
+              "bidder_id": "agent-3",
+              "amount": 300
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 13,
+          "end_block": 15,
+          "max_end_block": 18
+        },
+        "token_10": {
+          "seller_id": "agent-0",
+          "reserve_price": 225,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 14,
+          "end_block": 16,
+          "max_end_block": 19
+        }
+      },
+      "hash": "512170e4aede353a870e77f67c74fae668ff432f93e8ffbe17802b34464bf1c7"
+    },
+    {
+      "index": 15,
+      "timestamp": 1775940867.591553,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_10",
+            "bid_amount": 300
+          },
+          "timestamp": 1775940859.5481842,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_9",
+          "seller_id": "agent-0",
+          "winner_id": "agent-3",
+          "final_price": 225,
+          "reserve_price": 225,
+          "tick_resolved": 15,
+          "timestamp": 1775940867.591546,
+          "success": true,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 225
+            },
+            {
+              "bidder_id": "agent-3",
+              "amount": 300
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 13
+        }
+      ],
+      "previous_hash": "512170e4aede353a870e77f67c74fae668ff432f93e8ffbe17802b34464bf1c7",
+      "active_auctions_snapshot": {
+        "token_8": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [
+            {
+              "bidder_id": "agent-3",
+              "amount": 100
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 12,
+          "end_block": 16,
+          "max_end_block": 17
+        },
+        "token_10": {
+          "seller_id": "agent-0",
+          "reserve_price": 225,
+          "bids": [
+            {
+              "bidder_id": "agent-3",
+              "amount": 300
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 14,
+          "end_block": 16,
+          "max_end_block": 19
+        }
+      },
+      "hash": "5be724c910c016fa5549986ceb44753dc32b7153e1e27d1bc48f9bb48125ec36"
+    },
+    {
+      "index": 16,
+      "timestamp": 1775940904.977001,
+      "transactions": [
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_11",
+            "price": 150
+          },
+          "timestamp": 1775940895.444435,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_10",
+            "bid_amount": 225
+          },
+          "timestamp": 1775940903.4004102,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_10",
+          "seller_id": "agent-0",
+          "winner_id": "agent-3",
+          "final_price": 225,
+          "reserve_price": 225,
+          "tick_resolved": 16,
+          "timestamp": 1775940904.976964,
+          "success": true,
+          "bids": [
+            {
+              "bidder_id": "agent-3",
+              "amount": 300
+            },
+            {
+              "bidder_id": "agent-2",
+              "amount": 225
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 14
+        }
+      ],
+      "previous_hash": "5be724c910c016fa5549986ceb44753dc32b7153e1e27d1bc48f9bb48125ec36",
+      "active_auctions_snapshot": {
+        "token_8": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [
+            {
+              "bidder_id": "agent-3",
+              "amount": 100
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 12,
+          "end_block": 17,
+          "max_end_block": 17
+        },
+        "token_11": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 16,
+          "end_block": 18,
+          "max_end_block": 21
+        }
+      },
+      "hash": "01dde42807d3f7411b499b3605d47d812376b87da55edff28f98521f218d0c38"
+    },
+    {
+      "index": 17,
+      "timestamp": 1775940945.2716339,
+      "transactions": [
+        {
+          "agent_id": "agent-2",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_8",
+            "bid_amount": 75
+          },
+          "timestamp": 1775940933.1539688,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_12",
+            "price": 150
+          },
+          "timestamp": 1775940937.277461,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_11",
+            "bid_amount": 200
+          },
+          "timestamp": 1775940939.8317928,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_11",
+            "bid_amount": 100
+          },
+          "timestamp": 1775940943.736872,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_8",
+          "seller_id": "agent-0",
+          "winner_id": "agent-3",
+          "final_price": 75,
+          "reserve_price": 75,
+          "tick_resolved": 17,
+          "timestamp": 1775940945.271627,
+          "success": true,
+          "bids": [
+            {
+              "bidder_id": "agent-3",
+              "amount": 100
+            },
+            {
+              "bidder_id": "agent-2",
+              "amount": 75
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 12
+        }
+      ],
+      "previous_hash": "01dde42807d3f7411b499b3605d47d812376b87da55edff28f98521f218d0c38",
+      "active_auctions_snapshot": {
+        "token_11": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [
+            {
+              "bidder_id": "agent-3",
+              "amount": 200
+            },
+            {
+              "bidder_id": "agent-1",
+              "amount": 100
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 16,
+          "end_block": 18,
+          "max_end_block": 21
+        },
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 17,
+          "end_block": 19,
+          "max_end_block": 22
+        }
+      },
+      "hash": "9e50b0c9cfb8487132c4881f1661ef9bcd408436c86554a36511516a3a460706"
+    },
+    {
+      "index": 18,
+      "timestamp": 1775940980.970996,
+      "transactions": [
+        {
+          "agent_id": "agent-2",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_12",
+            "bid_amount": 150
+          },
+          "timestamp": 1775940970.5115871,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_13",
+            "price": 75
+          },
+          "timestamp": 1775940979.013178,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_0",
+            "price": 150
+          },
+          "timestamp": 1775940979.3471959,
+          "tx_type": "start_auction"
+        }
+      ],
+      "previous_hash": "9e50b0c9cfb8487132c4881f1661ef9bcd408436c86554a36511516a3a460706",
+      "active_auctions_snapshot": {
+        "token_11": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [
+            {
+              "bidder_id": "agent-3",
+              "amount": 200
+            },
+            {
+              "bidder_id": "agent-1",
+              "amount": 100
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 16,
+          "end_block": 19,
+          "max_end_block": 21
+        },
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 150
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 17,
+          "end_block": 19,
+          "max_end_block": 22
+        },
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 18,
+          "end_block": 20,
+          "max_end_block": 23
+        },
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 150,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 18,
+          "end_block": 20,
+          "max_end_block": 23
+        }
+      },
+      "hash": "a2778e9878cccfaca2e818f5fd64f291dc782e9526471d9644f80a411e2f1ec6"
+    },
+    {
+      "index": 19,
+      "timestamp": 1775941070.859644,
+      "transactions": [
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_14",
+            "price": 150
+          },
+          "timestamp": 1775941016.220303,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_0",
+            "price": 127.5
+          },
+          "timestamp": 1775941020.412842,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_12",
+            "bid_amount": 100
+          },
+          "timestamp": 1775941023.281991,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_11",
+            "bid_amount": 150
+          },
+          "timestamp": 1775941069.255795,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_11",
+          "seller_id": "agent-0",
+          "winner_id": "agent-3",
+          "final_price": 150,
+          "reserve_price": 150,
+          "tick_resolved": 19,
+          "timestamp": 1775941070.859614,
+          "success": true,
+          "bids": [
+            {
+              "bidder_id": "agent-3",
+              "amount": 200
+            },
+            {
+              "bidder_id": "agent-1",
+              "amount": 100
+            },
+            {
+              "bidder_id": "agent-2",
+              "amount": 150
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 16
+        }
+      ],
+      "previous_hash": "a2778e9878cccfaca2e818f5fd64f291dc782e9526471d9644f80a411e2f1ec6",
+      "active_auctions_snapshot": {
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 150
+            },
+            {
+              "bidder_id": "agent-1",
+              "amount": 100
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 17,
+          "end_block": 20,
+          "max_end_block": 22
+        },
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 18,
+          "end_block": 20,
+          "max_end_block": 23
+        },
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 150,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 18,
+          "end_block": 20,
+          "max_end_block": 23
+        },
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 19,
+          "end_block": 21,
+          "max_end_block": 24
+        }
+      },
+      "hash": "e366593acbaa154f26d3cf6497c10c07496c4d74efec60113a332d75c040bfeb"
+    },
+    {
+      "index": 20,
+      "timestamp": 1775941110.09359,
+      "transactions": [
+        {
+          "agent_id": "agent-2",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_14",
+            "bid_amount": 150
+          },
+          "timestamp": 1775941098.068464,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_15",
+            "price": 225
+          },
+          "timestamp": 1775941107.772544,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_1",
+            "price": 200
+          },
+          "timestamp": 1775941108.333366,
+          "tx_type": "start_auction"
+        }
+      ],
+      "previous_hash": "e366593acbaa154f26d3cf6497c10c07496c4d74efec60113a332d75c040bfeb",
+      "active_auctions_snapshot": {
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 150
+            },
+            {
+              "bidder_id": "agent-1",
+              "amount": 100
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 17,
+          "end_block": 21,
+          "max_end_block": 22
+        },
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 18,
+          "end_block": 21,
+          "max_end_block": 23
+        },
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 150,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 18,
+          "end_block": 21,
+          "max_end_block": 23
+        },
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 150
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 19,
+          "end_block": 21,
+          "max_end_block": 24
+        },
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 225,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 20,
+          "end_block": 22,
+          "max_end_block": 25
+        },
+        "token_1": {
+          "seller_id": "agent-3",
+          "reserve_price": 200,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 20,
+          "end_block": 22,
+          "max_end_block": 25
+        }
+      },
+      "hash": "8eb48da8297f60b7e1a4d4cbaf458e1181b013f3fbab2c146d9205cba19523e0"
+    },
+    {
+      "index": 21,
+      "timestamp": 1775941157.739191,
+      "transactions": [
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_16",
+            "price": 225
+          },
+          "timestamp": 1775941137.293364,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_15",
+            "bid_amount": 150
+          },
+          "timestamp": 1775941139.9200199,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_15",
+            "bid_amount": 225
+          },
+          "timestamp": 1775941141.7722418,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_0",
+            "price": 127.5
+          },
+          "timestamp": 1775941156.168075,
+          "tx_type": "start_auction"
+        }
+      ],
+      "previous_hash": "8eb48da8297f60b7e1a4d4cbaf458e1181b013f3fbab2c146d9205cba19523e0",
+      "active_auctions_snapshot": {
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 150
+            },
+            {
+              "bidder_id": "agent-1",
+              "amount": 100
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 17,
+          "end_block": 22,
+          "max_end_block": 22
+        },
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 18,
+          "end_block": 22,
+          "max_end_block": 23
+        },
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 150,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 18,
+          "end_block": 22,
+          "max_end_block": 23
+        },
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 150
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 19,
+          "end_block": 22,
+          "max_end_block": 24
+        },
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 225,
+          "bids": [
+            {
+              "bidder_id": "agent-1",
+              "amount": 150
+            },
+            {
+              "bidder_id": "agent-2",
+              "amount": 225
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 20,
+          "end_block": 22,
+          "max_end_block": 25
+        },
+        "token_1": {
+          "seller_id": "agent-3",
+          "reserve_price": 200,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 20,
+          "end_block": 22,
+          "max_end_block": 25
+        },
+        "token_16": {
+          "seller_id": "agent-0",
+          "reserve_price": 225,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 21,
+          "end_block": 23,
+          "max_end_block": 26
+        }
+      },
+      "hash": "479a3cc42974c4b72fc30af1c3a714edbb3facce615906618fcd2407356a0fe0"
+    },
+    {
+      "index": 22,
+      "timestamp": 1775941206.5862908,
+      "transactions": [
+        {
+          "agent_id": "agent-2",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_16",
+            "bid_amount": 225
+          },
+          "timestamp": 1775941197.6045818,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_2",
+            "price": 150
+          },
+          "timestamp": 1775941205.005368,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_12",
+          "seller_id": "agent-0",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 150,
+          "tick_resolved": 22,
+          "timestamp": 1775941206.586241,
+          "success": false,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 150
+            },
+            {
+              "bidder_id": "agent-1",
+              "amount": 100
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 17
+        }
+      ],
+      "previous_hash": "479a3cc42974c4b72fc30af1c3a714edbb3facce615906618fcd2407356a0fe0",
+      "active_auctions_snapshot": {
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 18,
+          "end_block": 23,
+          "max_end_block": 23
+        },
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 150,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 18,
+          "end_block": 23,
+          "max_end_block": 23
+        },
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 150
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 19,
+          "end_block": 23,
+          "max_end_block": 24
+        },
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 225,
+          "bids": [
+            {
+              "bidder_id": "agent-1",
+              "amount": 150
+            },
+            {
+              "bidder_id": "agent-2",
+              "amount": 225
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 20,
+          "end_block": 23,
+          "max_end_block": 25
+        },
+        "token_1": {
+          "seller_id": "agent-3",
+          "reserve_price": 200,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 20,
+          "end_block": 23,
+          "max_end_block": 25
+        },
+        "token_16": {
+          "seller_id": "agent-0",
+          "reserve_price": 225,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 225
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 21,
+          "end_block": 23,
+          "max_end_block": 26
+        },
+        "token_2": {
+          "seller_id": "agent-3",
+          "reserve_price": 150,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 22,
+          "end_block": 24,
+          "max_end_block": 27
+        }
+      },
+      "hash": "09ce98ac970a80a78aa3a92468cb590407a8ee85558af39f35dc08fa8d14d79b"
+    },
+    {
+      "index": 23,
+      "timestamp": 1775941252.471483,
+      "transactions": [
+        {
+          "agent_id": "agent-2",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_13",
+            "bid_amount": 75
+          },
+          "timestamp": 1775941236.835917,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_12",
+            "price": 150
+          },
+          "timestamp": 1775941241.710283,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_3",
+            "price": 300
+          },
+          "timestamp": 1775941241.974389,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_13",
+            "bid_amount": 50
+          },
+          "timestamp": 1775941250.8917189,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_13",
+          "seller_id": "agent-0",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 75,
+          "tick_resolved": 23,
+          "timestamp": 1775941252.4714649,
+          "success": false,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 75
+            },
+            {
+              "bidder_id": "agent-1",
+              "amount": 50
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 18
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_0",
+          "seller_id": "agent-3",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 150,
+          "tick_resolved": 23,
+          "timestamp": 1775941252.471471,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 18
+        }
+      ],
+      "previous_hash": "09ce98ac970a80a78aa3a92468cb590407a8ee85558af39f35dc08fa8d14d79b",
+      "active_auctions_snapshot": {
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 150
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 19,
+          "end_block": 24,
+          "max_end_block": 24
+        },
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 225,
+          "bids": [
+            {
+              "bidder_id": "agent-1",
+              "amount": 150
+            },
+            {
+              "bidder_id": "agent-2",
+              "amount": 225
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 20,
+          "end_block": 24,
+          "max_end_block": 25
+        },
+        "token_1": {
+          "seller_id": "agent-3",
+          "reserve_price": 200,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 20,
+          "end_block": 24,
+          "max_end_block": 25
+        },
+        "token_16": {
+          "seller_id": "agent-0",
+          "reserve_price": 225,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 225
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 21,
+          "end_block": 24,
+          "max_end_block": 26
+        },
+        "token_2": {
+          "seller_id": "agent-3",
+          "reserve_price": 150,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 22,
+          "end_block": 24,
+          "max_end_block": 27
+        },
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 23,
+          "end_block": 25,
+          "max_end_block": 28
+        },
+        "token_3": {
+          "seller_id": "agent-3",
+          "reserve_price": 300,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 23,
+          "end_block": 25,
+          "max_end_block": 28
+        }
+      },
+      "hash": "c736a5049055f33687fb0a174b055742f5661e7f0ce3274367bee4ddb0b4f4d4"
+    },
+    {
+      "index": 24,
+      "timestamp": 1775941390.677653,
+      "transactions": [
+        {
+          "agent_id": "agent-1",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_14",
+            "bid_amount": 100
+          },
+          "timestamp": 1775941294.646782,
+          "tx_type": "place_bid",
+          "accepted": true
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_3",
+            "price": 255
+          },
+          "timestamp": 1775941297.6089542,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_14",
+          "seller_id": "agent-0",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 150,
+          "tick_resolved": 24,
+          "timestamp": 1775941390.6776052,
+          "success": false,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 150
+            },
+            {
+              "bidder_id": "agent-1",
+              "amount": 100
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 19
+        }
+      ],
+      "previous_hash": "c736a5049055f33687fb0a174b055742f5661e7f0ce3274367bee4ddb0b4f4d4",
+      "active_auctions_snapshot": {
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 225,
+          "bids": [
+            {
+              "bidder_id": "agent-1",
+              "amount": 150
+            },
+            {
+              "bidder_id": "agent-2",
+              "amount": 225
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 20,
+          "end_block": 25,
+          "max_end_block": 25
+        },
+        "token_1": {
+          "seller_id": "agent-3",
+          "reserve_price": 200,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 20,
+          "end_block": 25,
+          "max_end_block": 25
+        },
+        "token_16": {
+          "seller_id": "agent-0",
+          "reserve_price": 225,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 225
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 21,
+          "end_block": 25,
+          "max_end_block": 26
+        },
+        "token_2": {
+          "seller_id": "agent-3",
+          "reserve_price": 150,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 22,
+          "end_block": 25,
+          "max_end_block": 27
+        },
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 23,
+          "end_block": 25,
+          "max_end_block": 28
+        },
+        "token_3": {
+          "seller_id": "agent-3",
+          "reserve_price": 300,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 23,
+          "end_block": 25,
+          "max_end_block": 28
+        }
+      },
+      "hash": "656e80b304001014a47366ea4e2ce35d63ad0f0144706990f3d53959f62543fc"
+    },
+    {
+      "index": 25,
+      "timestamp": 1775941517.555274,
+      "transactions": [
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_13",
+            "price": 37.5
+          },
+          "timestamp": 1775941430.4428968,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_15",
+          "seller_id": "agent-0",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 225,
+          "tick_resolved": 25,
+          "timestamp": 1775941517.5552661,
+          "success": false,
+          "bids": [
+            {
+              "bidder_id": "agent-1",
+              "amount": 150
+            },
+            {
+              "bidder_id": "agent-2",
+              "amount": 225
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 20
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_1",
+          "seller_id": "agent-3",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 200,
+          "tick_resolved": 25,
+          "timestamp": 1775941517.555269,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 20
+        }
+      ],
+      "previous_hash": "656e80b304001014a47366ea4e2ce35d63ad0f0144706990f3d53959f62543fc",
+      "active_auctions_snapshot": {
+        "token_16": {
+          "seller_id": "agent-0",
+          "reserve_price": 225,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 225
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 21,
+          "end_block": 26,
+          "max_end_block": 26
+        },
+        "token_2": {
+          "seller_id": "agent-3",
+          "reserve_price": 150,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 22,
+          "end_block": 26,
+          "max_end_block": 27
+        },
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 23,
+          "end_block": 26,
+          "max_end_block": 28
+        },
+        "token_3": {
+          "seller_id": "agent-3",
+          "reserve_price": 300,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 23,
+          "end_block": 26,
+          "max_end_block": 28
+        },
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 25,
+          "end_block": 27,
+          "max_end_block": 30
+        }
+      },
+      "hash": "6f6ee0c8781d8c359e186f23cbd16fb6dda765864bdce129b476aaa3e909ab1b"
+    },
+    {
+      "index": 26,
+      "timestamp": 1775941568.577176,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_0",
+            "price": 100
+          },
+          "timestamp": 1775941562.2932491,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_12",
+            "price": 127.5
+          },
+          "timestamp": 1775941567.100936,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_16",
+          "seller_id": "agent-0",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 225,
+          "tick_resolved": 26,
+          "timestamp": 1775941568.577136,
+          "success": false,
+          "bids": [
+            {
+              "bidder_id": "agent-2",
+              "amount": 225
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 21
+        }
+      ],
+      "previous_hash": "6f6ee0c8781d8c359e186f23cbd16fb6dda765864bdce129b476aaa3e909ab1b",
+      "active_auctions_snapshot": {
+        "token_2": {
+          "seller_id": "agent-3",
+          "reserve_price": 150,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 22,
+          "end_block": 27,
+          "max_end_block": 27
+        },
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 23,
+          "end_block": 27,
+          "max_end_block": 28
+        },
+        "token_3": {
+          "seller_id": "agent-3",
+          "reserve_price": 300,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 23,
+          "end_block": 27,
+          "max_end_block": 28
+        },
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 25,
+          "end_block": 27,
+          "max_end_block": 30
+        },
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 100,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 26,
+          "end_block": 28,
+          "max_end_block": 31
+        }
+      },
+      "hash": "37e935e4a33a942b7d8cd5144fbe8c7e1f5a90dc97b3b94583939fb702d4b99a"
+    },
+    {
+      "index": 27,
+      "timestamp": 1775941669.404887,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_2",
+            "price": 127.5
+          },
+          "timestamp": 1775941606.118431,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_14",
+            "price": 63.75
+          },
+          "timestamp": 1775941635.698261,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_2",
+          "seller_id": "agent-3",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 150,
+          "tick_resolved": 27,
+          "timestamp": 1775941669.404875,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 22
+        }
+      ],
+      "previous_hash": "37e935e4a33a942b7d8cd5144fbe8c7e1f5a90dc97b3b94583939fb702d4b99a",
+      "active_auctions_snapshot": {
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 150,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 23,
+          "end_block": 28,
+          "max_end_block": 28
+        },
+        "token_3": {
+          "seller_id": "agent-3",
+          "reserve_price": 300,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 23,
+          "end_block": 28,
+          "max_end_block": 28
+        },
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 25,
+          "end_block": 28,
+          "max_end_block": 30
+        },
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 100,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 26,
+          "end_block": 28,
+          "max_end_block": 31
+        },
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 63.75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 27,
+          "end_block": 29,
+          "max_end_block": 32
+        }
+      },
+      "hash": "bf58693debe1ffe90e0770303f461b9b8589aefc815da0b1a3a6dbec107d8222"
+    },
+    {
+      "index": 28,
+      "timestamp": 1775941723.0722299,
+      "transactions": [
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_15",
+            "price": 300
+          },
+          "timestamp": 1775941715.280573,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_3",
+            "price": 255
+          },
+          "timestamp": 1775941721.314427,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_12",
+          "seller_id": "agent-0",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 150,
+          "tick_resolved": 28,
+          "timestamp": 1775941723.072216,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 23
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_3",
+          "seller_id": "agent-3",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 300,
+          "tick_resolved": 28,
+          "timestamp": 1775941723.072221,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 23
+        }
+      ],
+      "previous_hash": "bf58693debe1ffe90e0770303f461b9b8589aefc815da0b1a3a6dbec107d8222",
+      "active_auctions_snapshot": {
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 25,
+          "end_block": 29,
+          "max_end_block": 30
+        },
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 100,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 26,
+          "end_block": 29,
+          "max_end_block": 31
+        },
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 63.75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 27,
+          "end_block": 29,
+          "max_end_block": 32
+        },
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 300,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 28,
+          "end_block": 30,
+          "max_end_block": 33
+        }
+      },
+      "hash": "a74b4f6c1ca617339ad043b878ec24b39b0a1e669cea5270ff195ef8b194f1f5"
+    },
+    {
+      "index": 29,
+      "timestamp": 1775941762.931913,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_0",
+            "price": 85
+          },
+          "timestamp": 1775941761.246494,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_15",
+            "price": 255
+          },
+          "timestamp": 1775941761.400126,
+          "tx_type": "start_auction"
+        }
+      ],
+      "previous_hash": "a74b4f6c1ca617339ad043b878ec24b39b0a1e669cea5270ff195ef8b194f1f5",
+      "active_auctions_snapshot": {
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 25,
+          "end_block": 30,
+          "max_end_block": 30
+        },
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 100,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 26,
+          "end_block": 30,
+          "max_end_block": 31
+        },
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 63.75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 27,
+          "end_block": 30,
+          "max_end_block": 32
+        },
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 300,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 28,
+          "end_block": 30,
+          "max_end_block": 33
+        }
+      },
+      "hash": "50770f96801b68c842e879fec5c1d6201ffb12a6da954c88ead8f0bbe48468df"
+    },
+    {
+      "index": 30,
+      "timestamp": 1775941819.519425,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_0",
+            "price": 1
+          },
+          "timestamp": 1775941803.038757,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_12",
+            "price": 75
+          },
+          "timestamp": 1775941817.832533,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_13",
+          "seller_id": "agent-0",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 37.5,
+          "tick_resolved": 30,
+          "timestamp": 1775941819.519407,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 25
+        }
+      ],
+      "previous_hash": "50770f96801b68c842e879fec5c1d6201ffb12a6da954c88ead8f0bbe48468df",
+      "active_auctions_snapshot": {
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 100,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 26,
+          "end_block": 31,
+          "max_end_block": 31
+        },
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 63.75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 27,
+          "end_block": 31,
+          "max_end_block": 32
+        },
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 300,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 28,
+          "end_block": 31,
+          "max_end_block": 33
+        },
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 30,
+          "end_block": 32,
+          "max_end_block": 35
+        }
+      },
+      "hash": "6826ec2d9f3b9a1fdc71cb60ecb9641bda178b7ed63c438564bc5193e3014352"
+    },
+    {
+      "index": 31,
+      "timestamp": 1775941867.999726,
+      "transactions": [
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_13",
+            "price": 75
+          },
+          "timestamp": 1775941864.8345962,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_0",
+            "price": 85
+          },
+          "timestamp": 1775941866.311386,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_0",
+          "seller_id": "agent-3",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 100,
+          "tick_resolved": 31,
+          "timestamp": 1775941867.9997141,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 26
+        }
+      ],
+      "previous_hash": "6826ec2d9f3b9a1fdc71cb60ecb9641bda178b7ed63c438564bc5193e3014352",
+      "active_auctions_snapshot": {
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 63.75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 27,
+          "end_block": 32,
+          "max_end_block": 32
+        },
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 300,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 28,
+          "end_block": 32,
+          "max_end_block": 33
+        },
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 30,
+          "end_block": 32,
+          "max_end_block": 35
+        },
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 31,
+          "end_block": 33,
+          "max_end_block": 36
+        }
+      },
+      "hash": "b4afd1e4d5e4b8fe43934b3fc44ee8cea6c6d03b7dd1d21869ea333c1d23786f"
+    },
+    {
+      "index": 32,
+      "timestamp": 1775941944.865272,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_0",
+            "price": 100
+          },
+          "timestamp": 1775941928.366306,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_14",
+          "seller_id": "agent-0",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 63.75,
+          "tick_resolved": 32,
+          "timestamp": 1775941944.865263,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 27
+        }
+      ],
+      "previous_hash": "b4afd1e4d5e4b8fe43934b3fc44ee8cea6c6d03b7dd1d21869ea333c1d23786f",
+      "active_auctions_snapshot": {
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 300,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 28,
+          "end_block": 33,
+          "max_end_block": 33
+        },
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 30,
+          "end_block": 33,
+          "max_end_block": 35
+        },
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 31,
+          "end_block": 33,
+          "max_end_block": 36
+        },
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 100,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 32,
+          "end_block": 34,
+          "max_end_block": 37
+        }
+      },
+      "hash": "829b4dacac00cfa87e3d981a76b77d64b179c4736e784bdd90b7233b9a6cdbd0"
+    },
+    {
+      "index": 33,
+      "timestamp": 1775942009.341408,
+      "transactions": [
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_15",
+            "price": 255
+          },
+          "timestamp": 1775941986.193036,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_15",
+          "seller_id": "agent-0",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 300,
+          "tick_resolved": 33,
+          "timestamp": 1775942009.341402,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 28
+        }
+      ],
+      "previous_hash": "829b4dacac00cfa87e3d981a76b77d64b179c4736e784bdd90b7233b9a6cdbd0",
+      "active_auctions_snapshot": {
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 30,
+          "end_block": 34,
+          "max_end_block": 35
+        },
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 31,
+          "end_block": 34,
+          "max_end_block": 36
+        },
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 100,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 32,
+          "end_block": 34,
+          "max_end_block": 37
+        }
+      },
+      "hash": "da4658f91c1fba70de20f5adef86269f3016972a93f11fbaaee3166f3ce324db"
+    },
+    {
+      "index": 34,
+      "timestamp": 1775942198.71177,
+      "transactions": [
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_14",
+            "price": 75
+          },
+          "timestamp": 1775942050.759476,
+          "tx_type": "start_auction"
+        }
+      ],
+      "previous_hash": "da4658f91c1fba70de20f5adef86269f3016972a93f11fbaaee3166f3ce324db",
+      "active_auctions_snapshot": {
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 30,
+          "end_block": 35,
+          "max_end_block": 35
+        },
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 31,
+          "end_block": 35,
+          "max_end_block": 36
+        },
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 100,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 32,
+          "end_block": 35,
+          "max_end_block": 37
+        },
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 34,
+          "end_block": 36,
+          "max_end_block": 39
+        }
+      },
+      "hash": "1c190cb7641af1fbafdd3c7daf4fe0fea5cd93fe849aead025c7b67f7b63e268"
+    },
+    {
+      "index": 35,
+      "timestamp": 1775942241.808883,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_1",
+            "price": 170
+          },
+          "timestamp": 1775942236.688842,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_15",
+            "price": 75
+          },
+          "timestamp": 1775942240.194644,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_12",
+          "seller_id": "agent-0",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 75,
+          "tick_resolved": 35,
+          "timestamp": 1775942241.808873,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 30
+        }
+      ],
+      "previous_hash": "1c190cb7641af1fbafdd3c7daf4fe0fea5cd93fe849aead025c7b67f7b63e268",
+      "active_auctions_snapshot": {
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 31,
+          "end_block": 36,
+          "max_end_block": 36
+        },
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 100,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 32,
+          "end_block": 36,
+          "max_end_block": 37
+        },
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 34,
+          "end_block": 36,
+          "max_end_block": 39
+        },
+        "token_1": {
+          "seller_id": "agent-3",
+          "reserve_price": 170,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 35,
+          "end_block": 37,
+          "max_end_block": 40
+        },
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 35,
+          "end_block": 37,
+          "max_end_block": 40
+        }
+      },
+      "hash": "f6d0b97733680d5d5482e1d78aad01e7bf48c7e64781d34c72b217a98d7f4916"
+    },
+    {
+      "index": 36,
+      "timestamp": 1775942283.5935109,
+      "transactions": [
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_13",
+            "price": 63.75
+          },
+          "timestamp": 1775942281.684266,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_13",
+          "seller_id": "agent-0",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 75,
+          "tick_resolved": 36,
+          "timestamp": 1775942283.5935,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 31
+        }
+      ],
+      "previous_hash": "f6d0b97733680d5d5482e1d78aad01e7bf48c7e64781d34c72b217a98d7f4916",
+      "active_auctions_snapshot": {
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 100,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 32,
+          "end_block": 37,
+          "max_end_block": 37
+        },
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 34,
+          "end_block": 37,
+          "max_end_block": 39
+        },
+        "token_1": {
+          "seller_id": "agent-3",
+          "reserve_price": 170,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 35,
+          "end_block": 37,
+          "max_end_block": 40
+        },
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 35,
+          "end_block": 37,
+          "max_end_block": 40
+        }
+      },
+      "hash": "7aac8852f9dd93cbcf7a7dd86a93c90c9aaae0e4eddfff50453381fa1ab1fbae"
+    },
+    {
+      "index": 37,
+      "timestamp": 1775942344.803402,
+      "transactions": [
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_16",
+            "price": 75
+          },
+          "timestamp": 1775942327.3347762,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_2",
+            "price": 37.5
+          },
+          "timestamp": 1775942343.16308,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_0",
+          "seller_id": "agent-3",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 100,
+          "tick_resolved": 37,
+          "timestamp": 1775942344.8033972,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 32
+        }
+      ],
+      "previous_hash": "7aac8852f9dd93cbcf7a7dd86a93c90c9aaae0e4eddfff50453381fa1ab1fbae",
+      "active_auctions_snapshot": {
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 34,
+          "end_block": 38,
+          "max_end_block": 39
+        },
+        "token_1": {
+          "seller_id": "agent-3",
+          "reserve_price": 170,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 35,
+          "end_block": 38,
+          "max_end_block": 40
+        },
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 35,
+          "end_block": 38,
+          "max_end_block": 40
+        },
+        "token_16": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 37,
+          "end_block": 39,
+          "max_end_block": 42
+        },
+        "token_2": {
+          "seller_id": "agent-3",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 37,
+          "end_block": 39,
+          "max_end_block": 42
+        }
+      },
+      "hash": "a767d28063c485473f2dc169e0582bb330833ae416e73febea306a83507e0546"
+    },
+    {
+      "index": 38,
+      "timestamp": 1775942463.4785202,
+      "transactions": [
+        {
+          "agent_id": "agent-1",
+          "capability": "place_bid",
+          "payload": {
+            "token_id": "token_16",
+            "bid_amount": 150
+          },
+          "timestamp": 1775942367.2656598,
+          "tx_type": "place_bid",
+          "accepted": true
+        }
+      ],
+      "previous_hash": "a767d28063c485473f2dc169e0582bb330833ae416e73febea306a83507e0546",
+      "active_auctions_snapshot": {
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 34,
+          "end_block": 39,
+          "max_end_block": 39
+        },
+        "token_1": {
+          "seller_id": "agent-3",
+          "reserve_price": 170,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 35,
+          "end_block": 39,
+          "max_end_block": 40
+        },
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 35,
+          "end_block": 39,
+          "max_end_block": 40
+        },
+        "token_16": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [
+            {
+              "bidder_id": "agent-1",
+              "amount": 150
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 37,
+          "end_block": 39,
+          "max_end_block": 42
+        },
+        "token_2": {
+          "seller_id": "agent-3",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 37,
+          "end_block": 39,
+          "max_end_block": 42
+        }
+      },
+      "hash": "bd35dcd76faa25b924daea0742f8d608ed0f7a82c875d698f8409f7179f9cefc"
+    },
+    {
+      "index": 39,
+      "timestamp": 1775942530.9615948,
+      "transactions": [
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_13",
+            "price": 1
+          },
+          "timestamp": 1775942509.20447,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_6",
+            "price": 450
+          },
+          "timestamp": 1775942529.219553,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_14",
+          "seller_id": "agent-0",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 75,
+          "tick_resolved": 39,
+          "timestamp": 1775942530.9615529,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 34
+        }
+      ],
+      "previous_hash": "bd35dcd76faa25b924daea0742f8d608ed0f7a82c875d698f8409f7179f9cefc",
+      "active_auctions_snapshot": {
+        "token_1": {
+          "seller_id": "agent-3",
+          "reserve_price": 170,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 35,
+          "end_block": 40,
+          "max_end_block": 40
+        },
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 35,
+          "end_block": 40,
+          "max_end_block": 40
+        },
+        "token_16": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [
+            {
+              "bidder_id": "agent-1",
+              "amount": 150
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 37,
+          "end_block": 40,
+          "max_end_block": 42
+        },
+        "token_2": {
+          "seller_id": "agent-3",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 37,
+          "end_block": 40,
+          "max_end_block": 42
+        },
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 1,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 39,
+          "end_block": 41,
+          "max_end_block": 44
+        },
+        "token_6": {
+          "seller_id": "agent-3",
+          "reserve_price": 450,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 39,
+          "end_block": 41,
+          "max_end_block": 44
+        }
+      },
+      "hash": "a9d4a47ba04517f2482b78044b9da5785894899864a3f7d2756740ba811b90db"
+    },
+    {
+      "index": 40,
+      "timestamp": 1775942624.839576,
+      "transactions": [
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_15",
+            "price": 1
+          },
+          "timestamp": 1775942573.138093,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_1",
+            "price": 144.5
+          },
+          "timestamp": 1775942622.5566678,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_1",
+          "seller_id": "agent-3",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 170,
+          "tick_resolved": 40,
+          "timestamp": 1775942624.83956,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 35
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_15",
+          "seller_id": "agent-0",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 75,
+          "tick_resolved": 40,
+          "timestamp": 1775942624.8395672,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 35
+        }
+      ],
+      "previous_hash": "a9d4a47ba04517f2482b78044b9da5785894899864a3f7d2756740ba811b90db",
+      "active_auctions_snapshot": {
+        "token_16": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [
+            {
+              "bidder_id": "agent-1",
+              "amount": 150
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 37,
+          "end_block": 41,
+          "max_end_block": 42
+        },
+        "token_2": {
+          "seller_id": "agent-3",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 37,
+          "end_block": 41,
+          "max_end_block": 42
+        },
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 1,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 39,
+          "end_block": 41,
+          "max_end_block": 44
+        },
+        "token_6": {
+          "seller_id": "agent-3",
+          "reserve_price": 450,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 39,
+          "end_block": 41,
+          "max_end_block": 44
+        }
+      },
+      "hash": "f6da2b4e174102ce72c9a6edf18630c5ef871dd312f5476ef0de343e2daf0c17"
+    },
+    {
+      "index": 41,
+      "timestamp": 1775942675.595989,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_6",
+            "price": 300
+          },
+          "timestamp": 1775942671.086595,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_12",
+            "price": 50
+          },
+          "timestamp": 1775942672.7590039,
+          "tx_type": "start_auction"
+        }
+      ],
+      "previous_hash": "f6da2b4e174102ce72c9a6edf18630c5ef871dd312f5476ef0de343e2daf0c17",
+      "active_auctions_snapshot": {
+        "token_16": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [
+            {
+              "bidder_id": "agent-1",
+              "amount": 150
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 37,
+          "end_block": 42,
+          "max_end_block": 42
+        },
+        "token_2": {
+          "seller_id": "agent-3",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 37,
+          "end_block": 42,
+          "max_end_block": 42
+        },
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 1,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 39,
+          "end_block": 42,
+          "max_end_block": 44
+        },
+        "token_6": {
+          "seller_id": "agent-3",
+          "reserve_price": 450,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 39,
+          "end_block": 42,
+          "max_end_block": 44
+        },
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 50,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 41,
+          "end_block": 43,
+          "max_end_block": 46
+        }
+      },
+      "hash": "24979da692fa528b6865b717b649342d2bb1aa2bdcd7d83d84c7fe649e87b9ba"
+    },
+    {
+      "index": 42,
+      "timestamp": 1775942721.897892,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_0",
+            "price": 90
+          },
+          "timestamp": 1775942715.066834,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_15",
+            "price": 63.75
+          },
+          "timestamp": 1775942720.1265001,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_16",
+          "seller_id": "agent-0",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 75,
+          "tick_resolved": 42,
+          "timestamp": 1775942721.897835,
+          "success": false,
+          "bids": [
+            {
+              "bidder_id": "agent-1",
+              "amount": 150
+            }
+          ],
+          "auction_type": "second_price",
+          "creation_block": 37
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_2",
+          "seller_id": "agent-3",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 37.5,
+          "tick_resolved": 42,
+          "timestamp": 1775942721.897877,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 37
+        }
+      ],
+      "previous_hash": "24979da692fa528b6865b717b649342d2bb1aa2bdcd7d83d84c7fe649e87b9ba",
+      "active_auctions_snapshot": {
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 1,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 39,
+          "end_block": 43,
+          "max_end_block": 44
+        },
+        "token_6": {
+          "seller_id": "agent-3",
+          "reserve_price": 450,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 39,
+          "end_block": 43,
+          "max_end_block": 44
+        },
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 50,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 41,
+          "end_block": 43,
+          "max_end_block": 46
+        },
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 90,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 42,
+          "end_block": 44,
+          "max_end_block": 47
+        },
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 63.75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 42,
+          "end_block": 44,
+          "max_end_block": 47
+        }
+      },
+      "hash": "cee6b126a9ed8876621257d41748184b5c88770fa1e2061f7c1bd0b05beed091"
+    },
+    {
+      "index": 43,
+      "timestamp": 1775942766.5890281,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_6",
+            "price": 382.5
+          },
+          "timestamp": 1775942752.41832,
+          "tx_type": "start_auction"
+        }
+      ],
+      "previous_hash": "cee6b126a9ed8876621257d41748184b5c88770fa1e2061f7c1bd0b05beed091",
+      "active_auctions_snapshot": {
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 1,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 39,
+          "end_block": 44,
+          "max_end_block": 44
+        },
+        "token_6": {
+          "seller_id": "agent-3",
+          "reserve_price": 450,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 39,
+          "end_block": 44,
+          "max_end_block": 44
+        },
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 50,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 41,
+          "end_block": 44,
+          "max_end_block": 46
+        },
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 90,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 42,
+          "end_block": 44,
+          "max_end_block": 47
+        },
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 63.75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 42,
+          "end_block": 44,
+          "max_end_block": 47
+        }
+      },
+      "hash": "8264ced65639e6e4e13ab0aecc388d0f35d5263a6df86f90630147c2e83f7504"
+    },
+    {
+      "index": 44,
+      "timestamp": 1775942823.124526,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_6",
+            "price": 300
+          },
+          "timestamp": 1775942812.752769,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_14",
+            "price": 50
+          },
+          "timestamp": 1775942821.3100102,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_13",
+          "seller_id": "agent-0",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 1,
+          "tick_resolved": 44,
+          "timestamp": 1775942823.124505,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 39
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_6",
+          "seller_id": "agent-3",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 450,
+          "tick_resolved": 44,
+          "timestamp": 1775942823.124513,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 39
+        }
+      ],
+      "previous_hash": "8264ced65639e6e4e13ab0aecc388d0f35d5263a6df86f90630147c2e83f7504",
+      "active_auctions_snapshot": {
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 50,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 41,
+          "end_block": 45,
+          "max_end_block": 46
+        },
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 90,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 42,
+          "end_block": 45,
+          "max_end_block": 47
+        },
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 63.75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 42,
+          "end_block": 45,
+          "max_end_block": 47
+        },
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 50,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 44,
+          "end_block": 46,
+          "max_end_block": 49
+        }
+      },
+      "hash": "72dd0849a3dbf7f21d2f38e24b8b37ec4a6358a0072dab7e5ad7e3d494c8232b"
+    },
+    {
+      "index": 45,
+      "timestamp": 1775942863.9219258,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_1",
+            "price": 1
+          },
+          "timestamp": 1775942859.275522,
+          "tx_type": "start_auction"
+        }
+      ],
+      "previous_hash": "72dd0849a3dbf7f21d2f38e24b8b37ec4a6358a0072dab7e5ad7e3d494c8232b",
+      "active_auctions_snapshot": {
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 50,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 41,
+          "end_block": 46,
+          "max_end_block": 46
+        },
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 90,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 42,
+          "end_block": 46,
+          "max_end_block": 47
+        },
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 63.75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 42,
+          "end_block": 46,
+          "max_end_block": 47
+        },
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 50,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 44,
+          "end_block": 46,
+          "max_end_block": 49
+        },
+        "token_1": {
+          "seller_id": "agent-3",
+          "reserve_price": 1,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 45,
+          "end_block": 47,
+          "max_end_block": 50
+        }
+      },
+      "hash": "32feb765b334ff4731fbdebe6935d4162593cf4e598b8bc6db48a55563a9ae00"
+    },
+    {
+      "index": 46,
+      "timestamp": 1775942912.36173,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_0",
+            "price": 76.5
+          },
+          "timestamp": 1775942905.40094,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_12",
+            "price": 42.5
+          },
+          "timestamp": 1775942910.210154,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_12",
+          "seller_id": "agent-0",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 50,
+          "tick_resolved": 46,
+          "timestamp": 1775942912.361699,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 41
+        }
+      ],
+      "previous_hash": "32feb765b334ff4731fbdebe6935d4162593cf4e598b8bc6db48a55563a9ae00",
+      "active_auctions_snapshot": {
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 90,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 42,
+          "end_block": 47,
+          "max_end_block": 47
+        },
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 63.75,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 42,
+          "end_block": 47,
+          "max_end_block": 47
+        },
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 50,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 44,
+          "end_block": 47,
+          "max_end_block": 49
+        },
+        "token_1": {
+          "seller_id": "agent-3",
+          "reserve_price": 1,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 45,
+          "end_block": 47,
+          "max_end_block": 50
+        }
+      },
+      "hash": "eab8da710440e77b9329e02630e8c01df1f95a305401db514285e11972f54ce7"
+    },
+    {
+      "index": 47,
+      "timestamp": 1775942967.656699,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_2",
+            "price": 1
+          },
+          "timestamp": 1775942949.122306,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_0",
+          "seller_id": "agent-3",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 90,
+          "tick_resolved": 47,
+          "timestamp": 1775942967.656678,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 42
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_15",
+          "seller_id": "agent-0",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 63.75,
+          "tick_resolved": 47,
+          "timestamp": 1775942967.656683,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 42
+        }
+      ],
+      "previous_hash": "eab8da710440e77b9329e02630e8c01df1f95a305401db514285e11972f54ce7",
+      "active_auctions_snapshot": {
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 50,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 44,
+          "end_block": 48,
+          "max_end_block": 49
+        },
+        "token_1": {
+          "seller_id": "agent-3",
+          "reserve_price": 1,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 45,
+          "end_block": 48,
+          "max_end_block": 50
+        },
+        "token_2": {
+          "seller_id": "agent-3",
+          "reserve_price": 1,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 47,
+          "end_block": 49,
+          "max_end_block": 52
+        }
+      },
+      "hash": "8fa1d39c35fb6fe1b3e399768070805f11e0fcf6e11eef20fabd0aab9c00e669"
+    },
+    {
+      "index": 48,
+      "timestamp": 1775943005.595376,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_0",
+            "price": 1
+          },
+          "timestamp": 1775943003.6993852,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_12",
+            "price": 50
+          },
+          "timestamp": 1775943003.709918,
+          "tx_type": "start_auction"
+        }
+      ],
+      "previous_hash": "8fa1d39c35fb6fe1b3e399768070805f11e0fcf6e11eef20fabd0aab9c00e669",
+      "active_auctions_snapshot": {
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 50,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 44,
+          "end_block": 49,
+          "max_end_block": 49
+        },
+        "token_1": {
+          "seller_id": "agent-3",
+          "reserve_price": 1,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 45,
+          "end_block": 49,
+          "max_end_block": 50
+        },
+        "token_2": {
+          "seller_id": "agent-3",
+          "reserve_price": 1,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 47,
+          "end_block": 49,
+          "max_end_block": 52
+        },
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 1,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 48,
+          "end_block": 50,
+          "max_end_block": 53
+        },
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 50,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 48,
+          "end_block": 50,
+          "max_end_block": 53
+        }
+      },
+      "hash": "4935e43be017188122ff3973ff190bdc146f1c1538be86b2f105aae65d7bad4d"
+    },
+    {
+      "index": 49,
+      "timestamp": 1775943052.0152981,
+      "transactions": [
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_14",
+            "price": 1
+          },
+          "timestamp": 1775943045.39435,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_0",
+            "price": 0.85
+          },
+          "timestamp": 1775943050.3050098,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_14",
+          "seller_id": "agent-0",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 50,
+          "tick_resolved": 49,
+          "timestamp": 1775943052.015274,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 44
+        }
+      ],
+      "previous_hash": "4935e43be017188122ff3973ff190bdc146f1c1538be86b2f105aae65d7bad4d",
+      "active_auctions_snapshot": {
+        "token_1": {
+          "seller_id": "agent-3",
+          "reserve_price": 1,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 45,
+          "end_block": 50,
+          "max_end_block": 50
+        },
+        "token_2": {
+          "seller_id": "agent-3",
+          "reserve_price": 1,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 47,
+          "end_block": 50,
+          "max_end_block": 52
+        },
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 1,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 48,
+          "end_block": 50,
+          "max_end_block": 53
+        },
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 50,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 48,
+          "end_block": 50,
+          "max_end_block": 53
+        }
+      },
+      "hash": "fa0af320ab7cea5ca7465c1314c6a5521eac00cd84e9089aab16a67dc38844cc"
+    },
+    {
+      "index": 50,
+      "timestamp": 1775943096.8467782,
+      "transactions": [
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_1",
+          "seller_id": "agent-3",
+          "winner_id": null,
+          "final_price": 0,
+          "reserve_price": 1,
+          "tick_resolved": 50,
+          "timestamp": 1775943096.846744,
+          "success": false,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 45
+        }
+      ],
+      "previous_hash": "fa0af320ab7cea5ca7465c1314c6a5521eac00cd84e9089aab16a67dc38844cc",
+      "active_auctions_snapshot": {
+        "token_2": {
+          "seller_id": "agent-3",
+          "reserve_price": 1,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 47,
+          "end_block": 51,
+          "max_end_block": 52
+        },
+        "token_0": {
+          "seller_id": "agent-3",
+          "reserve_price": 1,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 48,
+          "end_block": 51,
+          "max_end_block": 53
+        },
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 50,
+          "bids": [],
+          "auction_type": "second_price",
+          "creation_block": 48,
+          "end_block": 51,
+          "max_end_block": 53
+        }
+      },
+      "hash": "5776cadced4a791f957c2e221051e3de0fac4a0ac8fe664cc912cc81920651dc"
+    }
+  ],
+  "length": 51
+}

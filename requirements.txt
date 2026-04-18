@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+httpx
+google-genai
+google-cloud-aiplatform
+psutil
+matplotlib
+python-dotenv
+attrs

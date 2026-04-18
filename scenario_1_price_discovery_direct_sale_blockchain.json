@@ -1,0 +1,1997 @@
+{
+  "chain": [
+    {
+      "index": 0,
+      "timestamp": 1776046759.2994719,
+      "transactions": [],
+      "previous_hash": "0",
+      "active_auctions_snapshot": {},
+      "hash": "e6a167acfa7d12c4a7eafab917297047191c29d94d0a37928981701e5832e86d"
+    },
+    {
+      "index": 1,
+      "timestamp": 1776046784.701662,
+      "transactions": [
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_0",
+            "price": 112.5
+          },
+          "timestamp": 1776046780.600986,
+          "tx_type": "start_auction"
+        }
+      ],
+      "previous_hash": "e6a167acfa7d12c4a7eafab917297047191c29d94d0a37928981701e5832e86d",
+      "active_auctions_snapshot": {
+        "token_0": {
+          "seller_id": "agent-0",
+          "reserve_price": 112.5,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 1,
+          "price": 112.5
+        }
+      },
+      "hash": "bb3e61452199115f38bcaf5d1e5a3e996189385e655cca30d940cc138d439c0e"
+    },
+    {
+      "index": 2,
+      "timestamp": 1776046819.287276,
+      "transactions": [
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_0"
+          },
+          "timestamp": 1776046805.9696121,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_0"
+          },
+          "timestamp": 1776046806.788908,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_0"
+          },
+          "timestamp": 1776046809.2455208,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_1",
+            "price": 75
+          },
+          "timestamp": 1776046817.3591769,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_0",
+          "seller_id": "agent-0",
+          "winner_id": "agent-1",
+          "final_price": 112.5,
+          "reserve_price": 112.5,
+          "tick_resolved": 2,
+          "timestamp": 1776046819.287261,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 1
+        }
+      ],
+      "previous_hash": "bb3e61452199115f38bcaf5d1e5a3e996189385e655cca30d940cc138d439c0e",
+      "active_auctions_snapshot": {
+        "token_1": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 2,
+          "price": 75
+        }
+      },
+      "hash": "1f854fa45c5ebf211d0b8a759e9e5af3ae19d28642fd7cfddc9cd5d1d10dcfcd"
+    },
+    {
+      "index": 3,
+      "timestamp": 1776046854.4923398,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_1"
+          },
+          "timestamp": 1776046841.293354,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_1"
+          },
+          "timestamp": 1776046844.65267,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_1"
+          },
+          "timestamp": 1776046846.426365,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_2",
+            "price": 37.5
+          },
+          "timestamp": 1776046852.6602519,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_1",
+          "seller_id": "agent-0",
+          "winner_id": "agent-3",
+          "final_price": 75,
+          "reserve_price": 75,
+          "tick_resolved": 3,
+          "timestamp": 1776046854.49233,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 2
+        }
+      ],
+      "previous_hash": "1f854fa45c5ebf211d0b8a759e9e5af3ae19d28642fd7cfddc9cd5d1d10dcfcd",
+      "active_auctions_snapshot": {
+        "token_2": {
+          "seller_id": "agent-0",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 3,
+          "price": 37.5
+        }
+      },
+      "hash": "b597ea130b8eaae8746c868097ade0a0b22af2d77e65e33189bbc3d75b497bc5"
+    },
+    {
+      "index": 4,
+      "timestamp": 1776046882.279756,
+      "transactions": [
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_2"
+          },
+          "timestamp": 1776046876.075713,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_2"
+          },
+          "timestamp": 1776046878.539638,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_3",
+            "price": 37.5
+          },
+          "timestamp": 1776046878.967705,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_2"
+          },
+          "timestamp": 1776046880.370473,
+          "tx_type": "buy_now"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_2",
+          "seller_id": "agent-0",
+          "winner_id": "agent-2",
+          "final_price": 37.5,
+          "reserve_price": 37.5,
+          "tick_resolved": 4,
+          "timestamp": 1776046882.2797482,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 3
+        }
+      ],
+      "previous_hash": "b597ea130b8eaae8746c868097ade0a0b22af2d77e65e33189bbc3d75b497bc5",
+      "active_auctions_snapshot": {
+        "token_3": {
+          "seller_id": "agent-0",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 4,
+          "price": 37.5
+        }
+      },
+      "hash": "c5dd46d7ce6b9e9a4f1e22ce3a5ee7ada2fa875ef28072855de9b3118f858586"
+    },
+    {
+      "index": 5,
+      "timestamp": 1776046921.335212,
+      "transactions": [
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_3"
+          },
+          "timestamp": 1776046907.24865,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_3"
+          },
+          "timestamp": 1776046910.601946,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_3"
+          },
+          "timestamp": 1776046913.9366689,
+          "tx_type": "buy_now"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_3",
+          "seller_id": "agent-0",
+          "winner_id": "agent-1",
+          "final_price": 37.5,
+          "reserve_price": 37.5,
+          "tick_resolved": 5,
+          "timestamp": 1776046921.33518,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 4
+        }
+      ],
+      "previous_hash": "c5dd46d7ce6b9e9a4f1e22ce3a5ee7ada2fa875ef28072855de9b3118f858586",
+      "active_auctions_snapshot": {},
+      "hash": "1bbffc3be78ad4e5817ce8f22b9125f62d1340404000569f5db212852cf5bd88"
+    },
+    {
+      "index": 6,
+      "timestamp": 1776046957.787361,
+      "transactions": [
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_4",
+            "price": 75
+          },
+          "timestamp": 1776046954.2022028,
+          "tx_type": "start_auction"
+        }
+      ],
+      "previous_hash": "1bbffc3be78ad4e5817ce8f22b9125f62d1340404000569f5db212852cf5bd88",
+      "active_auctions_snapshot": {
+        "token_4": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 6,
+          "price": 75
+        }
+      },
+      "hash": "247c0ece930402264d1669cc0b6cd200aa0fc5de8332d388de3935c4441cdfe9"
+    },
+    {
+      "index": 7,
+      "timestamp": 1776047008.878409,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_4"
+          },
+          "timestamp": 1776046979.335423,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_4"
+          },
+          "timestamp": 1776046982.19342,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_4"
+          },
+          "timestamp": 1776046984.8116539,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_5",
+            "price": 37.5
+          },
+          "timestamp": 1776047007.070653,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_4",
+          "seller_id": "agent-0",
+          "winner_id": "agent-3",
+          "final_price": 75,
+          "reserve_price": 75,
+          "tick_resolved": 7,
+          "timestamp": 1776047008.8783958,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 6
+        }
+      ],
+      "previous_hash": "247c0ece930402264d1669cc0b6cd200aa0fc5de8332d388de3935c4441cdfe9",
+      "active_auctions_snapshot": {
+        "token_5": {
+          "seller_id": "agent-0",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 7,
+          "price": 37.5
+        }
+      },
+      "hash": "decc0e084b36e48a79ee286e20d0f47f029d856166b3a4a6cb55a6313f3f19ba"
+    },
+    {
+      "index": 8,
+      "timestamp": 1776047043.847275,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_5"
+          },
+          "timestamp": 1776047033.301913,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_5"
+          },
+          "timestamp": 1776047036.1636522,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_5"
+          },
+          "timestamp": 1776047039.930781,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_6",
+            "price": 75
+          },
+          "timestamp": 1776047042.203681,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_5",
+          "seller_id": "agent-0",
+          "winner_id": "agent-3",
+          "final_price": 37.5,
+          "reserve_price": 37.5,
+          "tick_resolved": 8,
+          "timestamp": 1776047043.8472698,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 7
+        }
+      ],
+      "previous_hash": "decc0e084b36e48a79ee286e20d0f47f029d856166b3a4a6cb55a6313f3f19ba",
+      "active_auctions_snapshot": {
+        "token_6": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 8,
+          "price": 75
+        }
+      },
+      "hash": "ee3eed93a9bcee0ffc0e4da897b40a49d2564ee23a830529f1d8ece35473c7da"
+    },
+    {
+      "index": 9,
+      "timestamp": 1776047085.873306,
+      "transactions": [
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_6"
+          },
+          "timestamp": 1776047069.331137,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_6"
+          },
+          "timestamp": 1776047071.7359722,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_6"
+          },
+          "timestamp": 1776047071.7729568,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_7",
+            "price": 112.5
+          },
+          "timestamp": 1776047084.088907,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_6",
+          "seller_id": "agent-0",
+          "winner_id": "agent-1",
+          "final_price": 75,
+          "reserve_price": 75,
+          "tick_resolved": 9,
+          "timestamp": 1776047085.873299,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 8
+        }
+      ],
+      "previous_hash": "ee3eed93a9bcee0ffc0e4da897b40a49d2564ee23a830529f1d8ece35473c7da",
+      "active_auctions_snapshot": {
+        "token_7": {
+          "seller_id": "agent-0",
+          "reserve_price": 112.5,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 9,
+          "price": 112.5
+        }
+      },
+      "hash": "4c73cbe50b4df1bccf28b770f63e5517bbc68eaa15d71a0d34ae7d0e14b088d1"
+    },
+    {
+      "index": 10,
+      "timestamp": 1776047120.7547,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_7"
+          },
+          "timestamp": 1776047111.727795,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_7"
+          },
+          "timestamp": 1776047113.11533,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_8",
+            "price": 37.5
+          },
+          "timestamp": 1776047114.167588,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_7"
+          },
+          "timestamp": 1776047118.68901,
+          "tx_type": "buy_now"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_7",
+          "seller_id": "agent-0",
+          "winner_id": "agent-3",
+          "final_price": 112.5,
+          "reserve_price": 112.5,
+          "tick_resolved": 10,
+          "timestamp": 1776047120.754695,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 9
+        }
+      ],
+      "previous_hash": "4c73cbe50b4df1bccf28b770f63e5517bbc68eaa15d71a0d34ae7d0e14b088d1",
+      "active_auctions_snapshot": {
+        "token_8": {
+          "seller_id": "agent-0",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 10,
+          "price": 37.5
+        }
+      },
+      "hash": "5a9b55f3c67e4dc340d136e1aa5d7de9149b41cf9725f7d9ed3c6138c6045da7"
+    },
+    {
+      "index": 11,
+      "timestamp": 1776047158.5060108,
+      "transactions": [
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_8"
+          },
+          "timestamp": 1776047148.072327,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_9",
+            "price": 37.5
+          },
+          "timestamp": 1776047148.632056,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_8"
+          },
+          "timestamp": 1776047150.180723,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_8"
+          },
+          "timestamp": 1776047156.9384189,
+          "tx_type": "buy_now"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_8",
+          "seller_id": "agent-0",
+          "winner_id": "agent-1",
+          "final_price": 37.5,
+          "reserve_price": 37.5,
+          "tick_resolved": 11,
+          "timestamp": 1776047158.5059981,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 10
+        }
+      ],
+      "previous_hash": "5a9b55f3c67e4dc340d136e1aa5d7de9149b41cf9725f7d9ed3c6138c6045da7",
+      "active_auctions_snapshot": {
+        "token_9": {
+          "seller_id": "agent-0",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 11,
+          "price": 37.5
+        }
+      },
+      "hash": "d8017c1b1b2adf66ba8f31cc6eb21590d3d856163eaf9c0eda581543ed2f8df5"
+    },
+    {
+      "index": 12,
+      "timestamp": 1776047191.546954,
+      "transactions": [
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_9"
+          },
+          "timestamp": 1776047183.7143989,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_9"
+          },
+          "timestamp": 1776047183.739838,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_9"
+          },
+          "timestamp": 1776047189.541483,
+          "tx_type": "buy_now"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_9",
+          "seller_id": "agent-0",
+          "winner_id": "agent-2",
+          "final_price": 37.5,
+          "reserve_price": 37.5,
+          "tick_resolved": 12,
+          "timestamp": 1776047191.546946,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 11
+        }
+      ],
+      "previous_hash": "d8017c1b1b2adf66ba8f31cc6eb21590d3d856163eaf9c0eda581543ed2f8df5",
+      "active_auctions_snapshot": {},
+      "hash": "e31fef4157e29ba445cd1ff5ccc4ec046f2d832b6973daf04367b342f609c4bb"
+    },
+    {
+      "index": 13,
+      "timestamp": 1776047231.915095,
+      "transactions": [
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_10",
+            "price": 75
+          },
+          "timestamp": 1776047220.806855,
+          "tx_type": "start_auction"
+        }
+      ],
+      "previous_hash": "e31fef4157e29ba445cd1ff5ccc4ec046f2d832b6973daf04367b342f609c4bb",
+      "active_auctions_snapshot": {
+        "token_10": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 13,
+          "price": 75
+        }
+      },
+      "hash": "4ccdccd5e6e4d97727a67b7765cee893d56452d540a017357fe093804dbdc781"
+    },
+    {
+      "index": 14,
+      "timestamp": 1776047262.9919732,
+      "transactions": [
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_10"
+          },
+          "timestamp": 1776047255.49782,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_10"
+          },
+          "timestamp": 1776047257.283586,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_10"
+          },
+          "timestamp": 1776047258.887788,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_11",
+            "price": 75
+          },
+          "timestamp": 1776047261.229943,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_10",
+          "seller_id": "agent-0",
+          "winner_id": "agent-2",
+          "final_price": 75,
+          "reserve_price": 75,
+          "tick_resolved": 14,
+          "timestamp": 1776047262.991946,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 13
+        }
+      ],
+      "previous_hash": "4ccdccd5e6e4d97727a67b7765cee893d56452d540a017357fe093804dbdc781",
+      "active_auctions_snapshot": {
+        "token_11": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 14,
+          "price": 75
+        }
+      },
+      "hash": "a1786c00f7a8fd55796680ab1734746841b1a05debc4b8c871def71221e8fc53"
+    },
+    {
+      "index": 15,
+      "timestamp": 1776047297.42736,
+      "transactions": [
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_11"
+          },
+          "timestamp": 1776047291.371382,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_12",
+            "price": 75
+          },
+          "timestamp": 1776047291.6710851,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_11"
+          },
+          "timestamp": 1776047292.5347798,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_11"
+          },
+          "timestamp": 1776047295.720696,
+          "tx_type": "buy_now"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_11",
+          "seller_id": "agent-0",
+          "winner_id": "agent-1",
+          "final_price": 75,
+          "reserve_price": 75,
+          "tick_resolved": 15,
+          "timestamp": 1776047297.4273548,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 14
+        }
+      ],
+      "previous_hash": "a1786c00f7a8fd55796680ab1734746841b1a05debc4b8c871def71221e8fc53",
+      "active_auctions_snapshot": {
+        "token_12": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 15,
+          "price": 75
+        }
+      },
+      "hash": "477f4a5820cf8eb2d8255dd4e4b51f8d0045fd5e19505be4b678a448ee3b50ed"
+    },
+    {
+      "index": 16,
+      "timestamp": 1776047342.459478,
+      "transactions": [
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_12"
+          },
+          "timestamp": 1776047325.7997818,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_12"
+          },
+          "timestamp": 1776047327.465021,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_12"
+          },
+          "timestamp": 1776047329.0957499,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_13",
+            "price": 112.5
+          },
+          "timestamp": 1776047340.817319,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_12",
+          "seller_id": "agent-0",
+          "winner_id": "agent-1",
+          "final_price": 75,
+          "reserve_price": 75,
+          "tick_resolved": 16,
+          "timestamp": 1776047342.45947,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 15
+        }
+      ],
+      "previous_hash": "477f4a5820cf8eb2d8255dd4e4b51f8d0045fd5e19505be4b678a448ee3b50ed",
+      "active_auctions_snapshot": {
+        "token_13": {
+          "seller_id": "agent-0",
+          "reserve_price": 112.5,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 16,
+          "price": 112.5
+        }
+      },
+      "hash": "b528933ad524e3e4470bd68699372255b9fbe73b14a3990a812ef14b75cb308d"
+    },
+    {
+      "index": 17,
+      "timestamp": 1776047383.19809,
+      "transactions": [
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_13"
+          },
+          "timestamp": 1776047365.729009,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_13"
+          },
+          "timestamp": 1776047368.04104,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_13"
+          },
+          "timestamp": 1776047369.778956,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_14",
+            "price": 75
+          },
+          "timestamp": 1776047381.458432,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_13",
+          "seller_id": "agent-0",
+          "winner_id": "agent-1",
+          "final_price": 112.5,
+          "reserve_price": 112.5,
+          "tick_resolved": 17,
+          "timestamp": 1776047383.198085,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 16
+        }
+      ],
+      "previous_hash": "b528933ad524e3e4470bd68699372255b9fbe73b14a3990a812ef14b75cb308d",
+      "active_auctions_snapshot": {
+        "token_14": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 17,
+          "price": 75
+        }
+      },
+      "hash": "36f47cb77010b66fa917a601ef8e14840a6be5d2c6716f7d528fb1acf10477e3"
+    },
+    {
+      "index": 18,
+      "timestamp": 1776047433.489438,
+      "transactions": [
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_14"
+          },
+          "timestamp": 1776047408.909009,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_14"
+          },
+          "timestamp": 1776047410.173013,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_14"
+          },
+          "timestamp": 1776047414.009143,
+          "tx_type": "buy_now"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_14",
+          "seller_id": "agent-0",
+          "winner_id": "agent-1",
+          "final_price": 75,
+          "reserve_price": 75,
+          "tick_resolved": 18,
+          "timestamp": 1776047433.489424,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 17
+        }
+      ],
+      "previous_hash": "36f47cb77010b66fa917a601ef8e14840a6be5d2c6716f7d528fb1acf10477e3",
+      "active_auctions_snapshot": {},
+      "hash": "ce658bfdb4cfd0bf70c475e21d1b5c79f6eede9458044459efbd252beeffafab"
+    },
+    {
+      "index": 19,
+      "timestamp": 1776047461.829911,
+      "transactions": [
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_15",
+            "price": 75
+          },
+          "timestamp": 1776047460.0094788,
+          "tx_type": "start_auction"
+        }
+      ],
+      "previous_hash": "ce658bfdb4cfd0bf70c475e21d1b5c79f6eede9458044459efbd252beeffafab",
+      "active_auctions_snapshot": {
+        "token_15": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 19,
+          "price": 75
+        }
+      },
+      "hash": "781d7f740e0e6b00696e9e299585324331b6b9eb20195c7cb0b72e41f7f909a7"
+    },
+    {
+      "index": 20,
+      "timestamp": 1776047502.6021519,
+      "transactions": [
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_15"
+          },
+          "timestamp": 1776047486.665681,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_15"
+          },
+          "timestamp": 1776047489.102039,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_15"
+          },
+          "timestamp": 1776047491.111373,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_16",
+            "price": 112.5
+          },
+          "timestamp": 1776047500.833559,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_15",
+          "seller_id": "agent-0",
+          "winner_id": "agent-2",
+          "final_price": 75,
+          "reserve_price": 75,
+          "tick_resolved": 20,
+          "timestamp": 1776047502.602143,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 19
+        }
+      ],
+      "previous_hash": "781d7f740e0e6b00696e9e299585324331b6b9eb20195c7cb0b72e41f7f909a7",
+      "active_auctions_snapshot": {
+        "token_16": {
+          "seller_id": "agent-0",
+          "reserve_price": 112.5,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 20,
+          "price": 112.5
+        }
+      },
+      "hash": "d758c4db92d5d38d229a8d3d12fe96c3fcc05b00d2899bbc030a63d0dc05531e"
+    },
+    {
+      "index": 21,
+      "timestamp": 1776047542.649429,
+      "transactions": [
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_16"
+          },
+          "timestamp": 1776047528.661789,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_16"
+          },
+          "timestamp": 1776047529.9942012,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_16"
+          },
+          "timestamp": 1776047540.903782,
+          "tx_type": "buy_now"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_16",
+          "seller_id": "agent-0",
+          "winner_id": "agent-1",
+          "final_price": 112.5,
+          "reserve_price": 112.5,
+          "tick_resolved": 21,
+          "timestamp": 1776047542.6494222,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 20
+        }
+      ],
+      "previous_hash": "d758c4db92d5d38d229a8d3d12fe96c3fcc05b00d2899bbc030a63d0dc05531e",
+      "active_auctions_snapshot": {},
+      "hash": "b183604ba42a46ee8f333f9e02d272963c8c194ae614f49c2e07f9ac18bb3322"
+    },
+    {
+      "index": 22,
+      "timestamp": 1776047578.933343,
+      "transactions": [
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_17",
+            "price": 75
+          },
+          "timestamp": 1776047569.86415,
+          "tx_type": "start_auction"
+        }
+      ],
+      "previous_hash": "b183604ba42a46ee8f333f9e02d272963c8c194ae614f49c2e07f9ac18bb3322",
+      "active_auctions_snapshot": {
+        "token_17": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 22,
+          "price": 75
+        }
+      },
+      "hash": "95c87d618513d06d9fe4ae025a189fa4cd07a167972bd772ff42afff4af3af97"
+    },
+    {
+      "index": 23,
+      "timestamp": 1776047609.52399,
+      "transactions": [
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_17"
+          },
+          "timestamp": 1776047602.5467331,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_17"
+          },
+          "timestamp": 1776047605.8156328,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_18",
+            "price": 37.5
+          },
+          "timestamp": 1776047607.471122,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_17"
+          },
+          "timestamp": 1776047607.72836,
+          "tx_type": "buy_now"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_17",
+          "seller_id": "agent-0",
+          "winner_id": "agent-2",
+          "final_price": 75,
+          "reserve_price": 75,
+          "tick_resolved": 23,
+          "timestamp": 1776047609.523972,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 22
+        }
+      ],
+      "previous_hash": "95c87d618513d06d9fe4ae025a189fa4cd07a167972bd772ff42afff4af3af97",
+      "active_auctions_snapshot": {
+        "token_18": {
+          "seller_id": "agent-0",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 23,
+          "price": 37.5
+        }
+      },
+      "hash": "31c47ae774f4cfd94233d9f87833772a4bc1a5ff4916c94060e28d8fce48e248"
+    },
+    {
+      "index": 24,
+      "timestamp": 1776047639.593036,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_18"
+          },
+          "timestamp": 1776047632.657407,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_18"
+          },
+          "timestamp": 1776047636.0062459,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_18"
+          },
+          "timestamp": 1776047637.740881,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_19",
+            "price": 37.5
+          },
+          "timestamp": 1776047638.060492,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_18",
+          "seller_id": "agent-0",
+          "winner_id": "agent-3",
+          "final_price": 37.5,
+          "reserve_price": 37.5,
+          "tick_resolved": 24,
+          "timestamp": 1776047639.593029,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 23
+        }
+      ],
+      "previous_hash": "31c47ae774f4cfd94233d9f87833772a4bc1a5ff4916c94060e28d8fce48e248",
+      "active_auctions_snapshot": {
+        "token_19": {
+          "seller_id": "agent-0",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 24,
+          "price": 37.5
+        }
+      },
+      "hash": "4b2987f2917768dd1c970a77d954eeddc499f9b345b81f8846dd3a7eb76ca942"
+    },
+    {
+      "index": 25,
+      "timestamp": 1776047679.174142,
+      "transactions": [
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_19"
+          },
+          "timestamp": 1776047663.906582,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_19"
+          },
+          "timestamp": 1776047669.5312052,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_19"
+          },
+          "timestamp": 1776047672.5749812,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_20",
+            "price": 75
+          },
+          "timestamp": 1776047677.500354,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_19",
+          "seller_id": "agent-0",
+          "winner_id": "agent-2",
+          "final_price": 37.5,
+          "reserve_price": 37.5,
+          "tick_resolved": 25,
+          "timestamp": 1776047679.174123,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 24
+        }
+      ],
+      "previous_hash": "4b2987f2917768dd1c970a77d954eeddc499f9b345b81f8846dd3a7eb76ca942",
+      "active_auctions_snapshot": {
+        "token_20": {
+          "seller_id": "agent-0",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 25,
+          "price": 75
+        }
+      },
+      "hash": "bd1bb278b3c9857cf75f1a0c04c7e5a198e699bbab115d454793744635da10b8"
+    },
+    {
+      "index": 26,
+      "timestamp": 1776047719.8873432,
+      "transactions": [
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_20"
+          },
+          "timestamp": 1776047705.20927,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_20"
+          },
+          "timestamp": 1776047708.159163,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_21",
+            "price": 37.5
+          },
+          "timestamp": 1776047710.3431392,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_20"
+          },
+          "timestamp": 1776047718.1443908,
+          "tx_type": "buy_now"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_20",
+          "seller_id": "agent-0",
+          "winner_id": "agent-2",
+          "final_price": 75,
+          "reserve_price": 75,
+          "tick_resolved": 26,
+          "timestamp": 1776047719.887328,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 25
+        }
+      ],
+      "previous_hash": "bd1bb278b3c9857cf75f1a0c04c7e5a198e699bbab115d454793744635da10b8",
+      "active_auctions_snapshot": {
+        "token_21": {
+          "seller_id": "agent-0",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 26,
+          "price": 37.5
+        }
+      },
+      "hash": "3ec48c71333b3b48d4c64310f6ec7ff7007826eb4eca5eae41d7ede3a63447ec"
+    },
+    {
+      "index": 27,
+      "timestamp": 1776047759.959851,
+      "transactions": [
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_21"
+          },
+          "timestamp": 1776047746.25719,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_21"
+          },
+          "timestamp": 1776047746.4892201,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_21"
+          },
+          "timestamp": 1776047747.9229271,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_22",
+            "price": 112.5
+          },
+          "timestamp": 1776047758.184862,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_21",
+          "seller_id": "agent-0",
+          "winner_id": "agent-1",
+          "final_price": 37.5,
+          "reserve_price": 37.5,
+          "tick_resolved": 27,
+          "timestamp": 1776047759.959844,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 26
+        }
+      ],
+      "previous_hash": "3ec48c71333b3b48d4c64310f6ec7ff7007826eb4eca5eae41d7ede3a63447ec",
+      "active_auctions_snapshot": {
+        "token_22": {
+          "seller_id": "agent-0",
+          "reserve_price": 112.5,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 27,
+          "price": 112.5
+        }
+      },
+      "hash": "f77f87c85cc9c586a5581c4ee40d70b79a49b52bbaa9a58ca2b243c09a874c37"
+    },
+    {
+      "index": 28,
+      "timestamp": 1776047816.44835,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_22"
+          },
+          "timestamp": 1776047787.006183,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_22",
+            "price": 95.625
+          },
+          "timestamp": 1776047793.485076,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_22"
+          },
+          "timestamp": 1776047795.7990248,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_3",
+            "price": 75
+          },
+          "timestamp": 1776047814.719837,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_22",
+          "seller_id": "agent-0",
+          "winner_id": "agent-3",
+          "final_price": 112.5,
+          "reserve_price": 112.5,
+          "tick_resolved": 28,
+          "timestamp": 1776047816.448329,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 27
+        }
+      ],
+      "previous_hash": "f77f87c85cc9c586a5581c4ee40d70b79a49b52bbaa9a58ca2b243c09a874c37",
+      "active_auctions_snapshot": {
+        "token_3": {
+          "seller_id": "agent-1",
+          "reserve_price": 75,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 28,
+          "price": 75
+        }
+      },
+      "hash": "aa43060dd3b1df3d53cccfdc857b207d409336ce938996adf6737921b82ca5b2"
+    },
+    {
+      "index": 29,
+      "timestamp": 1776047856.962583,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_3"
+          },
+          "timestamp": 1776047845.964282,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_23",
+            "price": 37.5
+          },
+          "timestamp": 1776047852.027879,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_3",
+            "price": 63.75
+          },
+          "timestamp": 1776047855.2970219,
+          "tx_type": "start_auction"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_3",
+          "seller_id": "agent-1",
+          "winner_id": "agent-3",
+          "final_price": 75,
+          "reserve_price": 75,
+          "tick_resolved": 29,
+          "timestamp": 1776047856.962551,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 28
+        }
+      ],
+      "previous_hash": "aa43060dd3b1df3d53cccfdc857b207d409336ce938996adf6737921b82ca5b2",
+      "active_auctions_snapshot": {
+        "token_23": {
+          "seller_id": "agent-0",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 29,
+          "price": 37.5
+        }
+      },
+      "hash": "e29487ee2e4cd820f9ffbedd982e67da4a82781cdc59c19a43c1327a731923f5"
+    },
+    {
+      "index": 30,
+      "timestamp": 1776047894.41117,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_23"
+          },
+          "timestamp": 1776047885.1727428,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-0",
+          "capability": "start_auction",
+          "payload": {
+            "token_id": "token_24",
+            "price": 37.5
+          },
+          "timestamp": 1776047888.1846259,
+          "tx_type": "start_auction"
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_23"
+          },
+          "timestamp": 1776047890.281163,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_23"
+          },
+          "timestamp": 1776047892.8062139,
+          "tx_type": "buy_now"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_23",
+          "seller_id": "agent-0",
+          "winner_id": "agent-3",
+          "final_price": 37.5,
+          "reserve_price": 37.5,
+          "tick_resolved": 30,
+          "timestamp": 1776047894.411159,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 29
+        }
+      ],
+      "previous_hash": "e29487ee2e4cd820f9ffbedd982e67da4a82781cdc59c19a43c1327a731923f5",
+      "active_auctions_snapshot": {
+        "token_24": {
+          "seller_id": "agent-0",
+          "reserve_price": 37.5,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 30,
+          "price": 37.5
+        }
+      },
+      "hash": "024661825fae2eb667f3aadd859bb3080149004d4a6d8278f64406c5ef11d40e"
+    },
+    {
+      "index": 31,
+      "timestamp": 1776047939.3569589,
+      "transactions": [
+        {
+          "agent_id": "agent-3",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_24"
+          },
+          "timestamp": 1776047918.617551,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-1",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_24"
+          },
+          "timestamp": 1776047920.096978,
+          "tx_type": "buy_now"
+        },
+        {
+          "agent_id": "agent-2",
+          "capability": "buy_now",
+          "payload": {
+            "token_id": "token_24"
+          },
+          "timestamp": 1776047923.9629178,
+          "tx_type": "buy_now"
+        },
+        {
+          "tx_type": "auction_resolution",
+          "token_id": "token_24",
+          "seller_id": "agent-0",
+          "winner_id": "agent-3",
+          "final_price": 37.5,
+          "reserve_price": 37.5,
+          "tick_resolved": 31,
+          "timestamp": 1776047939.35695,
+          "success": true,
+          "bids": [],
+          "auction_type": "direct_sale",
+          "creation_block": 30
+        }
+      ],
+      "previous_hash": "024661825fae2eb667f3aadd859bb3080149004d4a6d8278f64406c5ef11d40e",
+      "active_auctions_snapshot": {},
+      "hash": "6ba98ad2d2e5b2a1c4d8ffd458c06532259a80853085d62d78a5f7c2accabb7d"
+    },
+    {
+      "index": 32,
+      "timestamp": 1776047973.2397969,
+      "transactions": [],
+      "previous_hash": "6ba98ad2d2e5b2a1c4d8ffd458c06532259a80853085d62d78a5f7c2accabb7d",
+      "active_auctions_snapshot": {},
+      "hash": "ef70b4c65e3c3a901b1e12b02b426ab8a5b8ded32e041ddbc3730eea2bf009e1"
+    },
+    {
+      "index": 33,
+      "timestamp": 1776048012.352347,
+      "transactions": [],
+      "previous_hash": "ef70b4c65e3c3a901b1e12b02b426ab8a5b8ded32e041ddbc3730eea2bf009e1",
+      "active_auctions_snapshot": {},
+      "hash": "0b4bfbe412487d258e736a07a15b6657ba73fdffeb04ec926eed5801f7950435"
+    },
+    {
+      "index": 34,
+      "timestamp": 1776048057.455508,
+      "transactions": [],
+      "previous_hash": "0b4bfbe412487d258e736a07a15b6657ba73fdffeb04ec926eed5801f7950435",
+      "active_auctions_snapshot": {},
+      "hash": "4018fec1d73c5b23cdbb66cf7d696c9cfd3df8424a7863365294df3cf2bba652"
+    },
+    {
+      "index": 35,
+      "timestamp": 1776048100.360298,
+      "transactions": [],
+      "previous_hash": "4018fec1d73c5b23cdbb66cf7d696c9cfd3df8424a7863365294df3cf2bba652",
+      "active_auctions_snapshot": {},
+      "hash": "4738f0ad05d06883db1329b744cce7314692096bcc2001cff1b565e908fc2db0"
+    },
+    {
+      "index": 36,
+      "timestamp": 1776048142.325034,
+      "transactions": [],
+      "previous_hash": "4738f0ad05d06883db1329b744cce7314692096bcc2001cff1b565e908fc2db0",
+      "active_auctions_snapshot": {},
+      "hash": "b0e21a8eba225d1253813826fb37e8ac9036de911f0427ab6cd5e735f8b1f464"
+    },
+    {
+      "index": 37,
+      "timestamp": 1776048187.0120919,
+      "transactions": [],
+      "previous_hash": "b0e21a8eba225d1253813826fb37e8ac9036de911f0427ab6cd5e735f8b1f464",
+      "active_auctions_snapshot": {},
+      "hash": "b66311fe8eebd17024a462a4acaa60f3db2dbf1b0d605b46be440c8da38e39bf"
+    },
+    {
+      "index": 38,
+      "timestamp": 1776048221.662792,
+      "transactions": [],
+      "previous_hash": "b66311fe8eebd17024a462a4acaa60f3db2dbf1b0d605b46be440c8da38e39bf",
+      "active_auctions_snapshot": {},
+      "hash": "f66decb715a465f7157d4de504e47ef1adfa2b582cb7d4f5478cb03f111a8d56"
+    },
+    {
+      "index": 39,
+      "timestamp": 1776048268.249527,
+      "transactions": [],
+      "previous_hash": "f66decb715a465f7157d4de504e47ef1adfa2b582cb7d4f5478cb03f111a8d56",
+      "active_auctions_snapshot": {},
+      "hash": "e256c0d55c9566291f5446d52600e40c352461475f1eb9783fc3d75cc32ddd5f"
+    },
+    {
+      "index": 40,
+      "timestamp": 1776048304.1978738,
+      "transactions": [],
+      "previous_hash": "e256c0d55c9566291f5446d52600e40c352461475f1eb9783fc3d75cc32ddd5f",
+      "active_auctions_snapshot": {},
+      "hash": "8aa975a336e7371906497b1f5fcce718aefecfbfce20a6b037f493049841bccb"
+    },
+    {
+      "index": 41,
+      "timestamp": 1776048342.408352,
+      "transactions": [],
+      "previous_hash": "8aa975a336e7371906497b1f5fcce718aefecfbfce20a6b037f493049841bccb",
+      "active_auctions_snapshot": {},
+      "hash": "35669f48098c96eb97393e39224254ed378f96135abbfe5388f9862f8d8d8d7a"
+    },
+    {
+      "index": 42,
+      "timestamp": 1776048384.144104,
+      "transactions": [],
+      "previous_hash": "35669f48098c96eb97393e39224254ed378f96135abbfe5388f9862f8d8d8d7a",
+      "active_auctions_snapshot": {},
+      "hash": "9270e3d20096a36b07b12e1ace51e44c3aa00816969527e997c5afb397fa19b2"
+    },
+    {
+      "index": 43,
+      "timestamp": 1776048426.225913,
+      "transactions": [],
+      "previous_hash": "9270e3d20096a36b07b12e1ace51e44c3aa00816969527e997c5afb397fa19b2",
+      "active_auctions_snapshot": {},
+      "hash": "1590e010041f9768310905e1d29294abb62469d002c45dcc090ee02ae1a0a9be"
+    },
+    {
+      "index": 44,
+      "timestamp": 1776048459.266034,
+      "transactions": [],
+      "previous_hash": "1590e010041f9768310905e1d29294abb62469d002c45dcc090ee02ae1a0a9be",
+      "active_auctions_snapshot": {},
+      "hash": "a5977baae4ad99d61216c15da2a6a2d4b7ba07277a0d2d21bd7869196d5970e4"
+    },
+    {
+      "index": 45,
+      "timestamp": 1776048489.9896672,
+      "transactions": [],
+      "previous_hash": "a5977baae4ad99d61216c15da2a6a2d4b7ba07277a0d2d21bd7869196d5970e4",
+      "active_auctions_snapshot": {},
+      "hash": "a6695fad2ac9880e99effc290ab0e55413419f2480665db880ecd1c8ead8756f"
+    },
+    {
+      "index": 46,
+      "timestamp": 1776048521.638272,
+      "transactions": [],
+      "previous_hash": "a6695fad2ac9880e99effc290ab0e55413419f2480665db880ecd1c8ead8756f",
+      "active_auctions_snapshot": {},
+      "hash": "90eb212eda949934e4d076b1d4a51efb342119fb4598fbd1b6a0e6c25e04c8d8"
+    },
+    {
+      "index": 47,
+      "timestamp": 1776048559.178303,
+      "transactions": [],
+      "previous_hash": "90eb212eda949934e4d076b1d4a51efb342119fb4598fbd1b6a0e6c25e04c8d8",
+      "active_auctions_snapshot": {},
+      "hash": "b5e1542b12ae4b94e7b2c8d8e6667162ddf7b562541970ab1df74a7d583edadc"
+    },
+    {
+      "index": 48,
+      "timestamp": 1776048599.00058,
+      "transactions": [],
+      "previous_hash": "b5e1542b12ae4b94e7b2c8d8e6667162ddf7b562541970ab1df74a7d583edadc",
+      "active_auctions_snapshot": {},
+      "hash": "98026b92aad2b3c9815a67cd6cf98869bd18995135e7689178d1515852078cd4"
+    },
+    {
+      "index": 49,
+      "timestamp": 1776048643.2523708,
+      "transactions": [],
+      "previous_hash": "98026b92aad2b3c9815a67cd6cf98869bd18995135e7689178d1515852078cd4",
+      "active_auctions_snapshot": {},
+      "hash": "6f21b3b4302593eb3d244de37384f8c99ffa3b75fd9d4cab47e90568c9ab7efc"
+    },
+    {
+      "index": 50,
+      "timestamp": 1776048673.4123158,
+      "transactions": [],
+      "previous_hash": "6f21b3b4302593eb3d244de37384f8c99ffa3b75fd9d4cab47e90568c9ab7efc",
+      "active_auctions_snapshot": {},
+      "hash": "2dbab5fb0502a3fbbda1df73fd16d7ce61ae9f5cd607b24f397f6a6c105e6ef8"
+    }
+  ],
+  "length": 51
+}

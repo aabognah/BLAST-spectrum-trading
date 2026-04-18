@@ -1,0 +1,634 @@
+{
+  "meta": {
+    "results_file": "public-results/scenario_1_price_discovery_second_price_results.json",
+    "blockchain_file": "public-results/scenario_1_price_discovery_second_price_blockchain.json",
+    "note": "Public-safe inferred summary from observable data only. No hidden model chain-of-thought is included."
+  },
+  "market_summary": {
+    "ticks": 50,
+    "auctions_started": 65,
+    "bids": 40,
+    "successful_auctions": 12,
+    "failed_auctions": 29,
+    "transactions": 12,
+    "avg_transaction_price": 150.0,
+    "avg_transaction_price_per_mhz": 15.0
+  },
+  "blockchain_summary": {
+    "blocks": 51,
+    "transactions_total": 146,
+    "transactions_by_type": {
+      "start_auction": 65,
+      "place_bid": 40,
+      "auction_resolution": 41
+    }
+  },
+  "agent_summaries": {
+    "agent-0": {
+      "decisions": {
+        "no_action": 12,
+        "place_bid": 0,
+        "start_auction": 38,
+        "buy_now": 0,
+        "other": 0
+      },
+      "bidding": {
+        "bids_placed": 0,
+        "avg_bid_amount": 0.0,
+        "avg_bid_shading": 0.0
+      },
+      "selling": {
+        "auctions_started": 38,
+        "avg_reserve_price": 112.8092,
+        "avg_reserve_markup": 1.130219
+      },
+      "outcomes": {
+        "won_transactions": 0,
+        "sold_transactions": 12,
+        "failed_auctions": 18,
+        "buyer_profit_total": 0.0,
+        "seller_profit_total": 1200.0
+      }
+    },
+    "agent-1": {
+      "decisions": {
+        "no_action": 39,
+        "place_bid": 11,
+        "start_auction": 0,
+        "buy_now": 0,
+        "other": 0
+      },
+      "bidding": {
+        "bids_placed": 11,
+        "avg_bid_amount": 100.0,
+        "avg_bid_shading": 0.0
+      },
+      "selling": {
+        "auctions_started": 0,
+        "avg_reserve_price": 0.0,
+        "avg_reserve_markup": 0.0
+      },
+      "outcomes": {
+        "won_transactions": 0,
+        "sold_transactions": 0,
+        "failed_auctions": 0,
+        "buyer_profit_total": 0.0,
+        "seller_profit_total": 0.0
+      }
+    },
+    "agent-2": {
+      "decisions": {
+        "no_action": 33,
+        "place_bid": 17,
+        "start_auction": 0,
+        "buy_now": 0,
+        "other": 0
+      },
+      "bidding": {
+        "bids_placed": 17,
+        "avg_bid_amount": 154.4118,
+        "avg_bid_shading": 0.0
+      },
+      "selling": {
+        "auctions_started": 0,
+        "avg_reserve_price": 0.0,
+        "avg_reserve_markup": 0.0
+      },
+      "outcomes": {
+        "won_transactions": 0,
+        "sold_transactions": 0,
+        "failed_auctions": 0,
+        "buyer_profit_total": 0.0,
+        "seller_profit_total": 0.0
+      }
+    },
+    "agent-3": {
+      "decisions": {
+        "no_action": 11,
+        "place_bid": 12,
+        "start_auction": 27,
+        "buy_now": 0,
+        "other": 0
+      },
+      "bidding": {
+        "bids_placed": 12,
+        "avg_bid_amount": 200.0,
+        "avg_bid_shading": 0.0
+      },
+      "selling": {
+        "auctions_started": 27,
+        "avg_reserve_price": 148.8278,
+        "avg_reserve_markup": -0.110889
+      },
+      "outcomes": {
+        "won_transactions": 12,
+        "sold_transactions": 0,
+        "failed_auctions": 11,
+        "buyer_profit_total": 600.0,
+        "seller_profit_total": 0.0
+      }
+    }
+  },
+  "inferred_timeline": [
+    {
+      "tick": 1,
+      "auctions_started": 1,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 0,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Mixed activity with incremental adjustment in agent behavior."
+    },
+    {
+      "tick": 2,
+      "auctions_started": 0,
+      "bids": 3,
+      "successful_auctions": 0,
+      "failed_auctions": 0,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Demand appeared, but bids did not clear reserve conditions."
+    },
+    {
+      "tick": 3,
+      "auctions_started": 0,
+      "bids": 0,
+      "successful_auctions": 1,
+      "failed_auctions": 0,
+      "avg_price": 75.0,
+      "avg_price_per_mhz": 15.0,
+      "inferred_summary": "Stable clearing behavior with observable market-based price discovery."
+    },
+    {
+      "tick": 4,
+      "auctions_started": 1,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 0,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Mixed activity with incremental adjustment in agent behavior."
+    },
+    {
+      "tick": 5,
+      "auctions_started": 1,
+      "bids": 3,
+      "successful_auctions": 0,
+      "failed_auctions": 0,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Demand appeared, but bids did not clear reserve conditions."
+    },
+    {
+      "tick": 6,
+      "auctions_started": 0,
+      "bids": 2,
+      "successful_auctions": 1,
+      "failed_auctions": 0,
+      "avg_price": 150.0,
+      "avg_price_per_mhz": 15.0,
+      "inferred_summary": "Competitive bidding pressure with multiple bids per cleared auction."
+    },
+    {
+      "tick": 7,
+      "auctions_started": 1,
+      "bids": 1,
+      "successful_auctions": 1,
+      "failed_auctions": 0,
+      "avg_price": 75.0,
+      "avg_price_per_mhz": 15.0,
+      "inferred_summary": "Stable clearing behavior with observable market-based price discovery."
+    },
+    {
+      "tick": 8,
+      "auctions_started": 1,
+      "bids": 3,
+      "successful_auctions": 0,
+      "failed_auctions": 0,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Demand appeared, but bids did not clear reserve conditions."
+    },
+    {
+      "tick": 9,
+      "auctions_started": 1,
+      "bids": 2,
+      "successful_auctions": 1,
+      "failed_auctions": 0,
+      "avg_price": 150.0,
+      "avg_price_per_mhz": 15.0,
+      "inferred_summary": "Competitive bidding pressure with multiple bids per cleared auction."
+    },
+    {
+      "tick": 10,
+      "auctions_started": 1,
+      "bids": 2,
+      "successful_auctions": 1,
+      "failed_auctions": 0,
+      "avg_price": 150.0,
+      "avg_price_per_mhz": 15.0,
+      "inferred_summary": "Competitive bidding pressure with multiple bids per cleared auction."
+    },
+    {
+      "tick": 11,
+      "auctions_started": 1,
+      "bids": 2,
+      "successful_auctions": 1,
+      "failed_auctions": 0,
+      "avg_price": 75.0,
+      "avg_price_per_mhz": 15.0,
+      "inferred_summary": "Competitive bidding pressure with multiple bids per cleared auction."
+    },
+    {
+      "tick": 12,
+      "auctions_started": 1,
+      "bids": 3,
+      "successful_auctions": 1,
+      "failed_auctions": 0,
+      "avg_price": 225.0,
+      "avg_price_per_mhz": 15.0,
+      "inferred_summary": "Competitive bidding pressure with multiple bids per cleared auction."
+    },
+    {
+      "tick": 13,
+      "auctions_started": 1,
+      "bids": 1,
+      "successful_auctions": 1,
+      "failed_auctions": 0,
+      "avg_price": 225.0,
+      "avg_price_per_mhz": 15.0,
+      "inferred_summary": "Stable clearing behavior with observable market-based price discovery."
+    },
+    {
+      "tick": 14,
+      "auctions_started": 1,
+      "bids": 2,
+      "successful_auctions": 0,
+      "failed_auctions": 0,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Demand appeared, but bids did not clear reserve conditions."
+    },
+    {
+      "tick": 15,
+      "auctions_started": 0,
+      "bids": 1,
+      "successful_auctions": 1,
+      "failed_auctions": 0,
+      "avg_price": 225.0,
+      "avg_price_per_mhz": 15.0,
+      "inferred_summary": "Stable clearing behavior with observable market-based price discovery."
+    },
+    {
+      "tick": 16,
+      "auctions_started": 1,
+      "bids": 1,
+      "successful_auctions": 1,
+      "failed_auctions": 0,
+      "avg_price": 225.0,
+      "avg_price_per_mhz": 15.0,
+      "inferred_summary": "Stable clearing behavior with observable market-based price discovery."
+    },
+    {
+      "tick": 17,
+      "auctions_started": 1,
+      "bids": 3,
+      "successful_auctions": 1,
+      "failed_auctions": 0,
+      "avg_price": 75.0,
+      "avg_price_per_mhz": 15.0,
+      "inferred_summary": "Competitive bidding pressure with multiple bids per cleared auction."
+    },
+    {
+      "tick": 18,
+      "auctions_started": 2,
+      "bids": 1,
+      "successful_auctions": 0,
+      "failed_auctions": 0,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Demand appeared, but bids did not clear reserve conditions."
+    },
+    {
+      "tick": 19,
+      "auctions_started": 2,
+      "bids": 2,
+      "successful_auctions": 1,
+      "failed_auctions": 0,
+      "avg_price": 150.0,
+      "avg_price_per_mhz": 15.0,
+      "inferred_summary": "Competitive bidding pressure with multiple bids per cleared auction."
+    },
+    {
+      "tick": 20,
+      "auctions_started": 2,
+      "bids": 1,
+      "successful_auctions": 0,
+      "failed_auctions": 0,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Demand appeared, but bids did not clear reserve conditions."
+    },
+    {
+      "tick": 21,
+      "auctions_started": 2,
+      "bids": 2,
+      "successful_auctions": 0,
+      "failed_auctions": 0,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Demand appeared, but bids did not clear reserve conditions."
+    },
+    {
+      "tick": 22,
+      "auctions_started": 1,
+      "bids": 1,
+      "successful_auctions": 0,
+      "failed_auctions": 1,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Demand appeared, but bids did not clear reserve conditions."
+    },
+    {
+      "tick": 23,
+      "auctions_started": 2,
+      "bids": 2,
+      "successful_auctions": 0,
+      "failed_auctions": 2,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Demand appeared, but bids did not clear reserve conditions."
+    },
+    {
+      "tick": 24,
+      "auctions_started": 1,
+      "bids": 1,
+      "successful_auctions": 0,
+      "failed_auctions": 1,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Demand appeared, but bids did not clear reserve conditions."
+    },
+    {
+      "tick": 25,
+      "auctions_started": 1,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 2,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Supply posted, but no demand matched reserve constraints."
+    },
+    {
+      "tick": 26,
+      "auctions_started": 2,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 1,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Supply posted, but no demand matched reserve constraints."
+    },
+    {
+      "tick": 27,
+      "auctions_started": 2,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 1,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Supply posted, but no demand matched reserve constraints."
+    },
+    {
+      "tick": 28,
+      "auctions_started": 2,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 2,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Supply posted, but no demand matched reserve constraints."
+    },
+    {
+      "tick": 29,
+      "auctions_started": 2,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 0,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Mixed activity with incremental adjustment in agent behavior."
+    },
+    {
+      "tick": 30,
+      "auctions_started": 2,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 1,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Supply posted, but no demand matched reserve constraints."
+    },
+    {
+      "tick": 31,
+      "auctions_started": 2,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 1,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Supply posted, but no demand matched reserve constraints."
+    },
+    {
+      "tick": 32,
+      "auctions_started": 1,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 1,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Supply posted, but no demand matched reserve constraints."
+    },
+    {
+      "tick": 33,
+      "auctions_started": 1,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 1,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Supply posted, but no demand matched reserve constraints."
+    },
+    {
+      "tick": 34,
+      "auctions_started": 1,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 0,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Mixed activity with incremental adjustment in agent behavior."
+    },
+    {
+      "tick": 35,
+      "auctions_started": 2,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 1,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Supply posted, but no demand matched reserve constraints."
+    },
+    {
+      "tick": 36,
+      "auctions_started": 1,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 1,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Supply posted, but no demand matched reserve constraints."
+    },
+    {
+      "tick": 37,
+      "auctions_started": 2,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 1,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Supply posted, but no demand matched reserve constraints."
+    },
+    {
+      "tick": 38,
+      "auctions_started": 0,
+      "bids": 1,
+      "successful_auctions": 0,
+      "failed_auctions": 0,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Demand appeared, but bids did not clear reserve conditions."
+    },
+    {
+      "tick": 39,
+      "auctions_started": 2,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 1,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Supply posted, but no demand matched reserve constraints."
+    },
+    {
+      "tick": 40,
+      "auctions_started": 2,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 2,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Supply posted, but no demand matched reserve constraints."
+    },
+    {
+      "tick": 41,
+      "auctions_started": 2,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 0,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Mixed activity with incremental adjustment in agent behavior."
+    },
+    {
+      "tick": 42,
+      "auctions_started": 2,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 2,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Supply posted, but no demand matched reserve constraints."
+    },
+    {
+      "tick": 43,
+      "auctions_started": 1,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 0,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Mixed activity with incremental adjustment in agent behavior."
+    },
+    {
+      "tick": 44,
+      "auctions_started": 2,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 2,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Supply posted, but no demand matched reserve constraints."
+    },
+    {
+      "tick": 45,
+      "auctions_started": 1,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 0,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Mixed activity with incremental adjustment in agent behavior."
+    },
+    {
+      "tick": 46,
+      "auctions_started": 2,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 1,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Supply posted, but no demand matched reserve constraints."
+    },
+    {
+      "tick": 47,
+      "auctions_started": 1,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 2,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Supply posted, but no demand matched reserve constraints."
+    },
+    {
+      "tick": 48,
+      "auctions_started": 2,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 0,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Mixed activity with incremental adjustment in agent behavior."
+    },
+    {
+      "tick": 49,
+      "auctions_started": 2,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 1,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Supply posted, but no demand matched reserve constraints."
+    },
+    {
+      "tick": 50,
+      "auctions_started": 0,
+      "bids": 0,
+      "successful_auctions": 0,
+      "failed_auctions": 1,
+      "avg_price": 0.0,
+      "avg_price_per_mhz": 0.0,
+      "inferred_summary": "Supply posted, but no demand matched reserve constraints."
+    }
+  ]
+}
