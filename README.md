@@ -1,6 +1,6 @@
 # BLAST Spectrum Trading Simulation
 
-BLAST (Blockchain-power LLM-based Spectrum Trading Market) is a proposed model for decentralized spectrum management on a blockchain. This repository contains the core code for the reproducible version of the BLAST simulation: a blockchain-based spectrum trading market where LLM agents buy/sell spectrum tokens through auction mechanisms.
+BLAST (Blockchain-power LLM-based Spectrum Trading) is a proposed model for decentralized and agentic spectrum management on a blockchain. This repository contains the core code for the reproducible version of the BLAST simulation: a blockchain-based spectrum trading market where LLM agents buy/sell spectrum tokens through auction mechanisms.
 
 ## Related Paper
 
